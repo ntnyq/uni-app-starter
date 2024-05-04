@@ -11,9 +11,3 @@ onHide(() => {
   console.log('App Hide')
 })
 </script>
-
-<template>
-  <view>
-    <slot />
-  </view>
-</template>

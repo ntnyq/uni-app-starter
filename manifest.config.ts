@@ -11,6 +11,7 @@ export default defineManifestConfig({
   versionName: '1.0.0',
   versionCode: '1',
   transformPx: false,
+  locale: 'zh-Hans',
   vueVersion: '3',
   uniStatistics: {
     enable: false,
@@ -22,6 +23,7 @@ export default defineManifestConfig({
     usingComponents: true,
     nvueStyleCompiler: 'uni-app',
     compilerVersion: 3,
+    screenOrientation: ['portrait-primary'],
     splashscreen: {
       alwaysShowBeforeRender: true,
       waiting: true,

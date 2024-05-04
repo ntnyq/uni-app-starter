@@ -1,6 +1,6 @@
 {
   "name": "starter-uni-app",
-  "appid": "",
+  "appid": "__UNI__1EFABD1",
   "description": "__TODO__",
   "versionName": "1.0.0",
   "versionCode": "1",
@@ -48,7 +48,10 @@
         "android": {},
         "ios": {}
       }
-    }
+    },
+    "screenOrientation": [
+      "portrait-primary"
+    ]
   },
   "quickapp": {},
   "mp-weixin": {
@@ -71,5 +74,6 @@
     "enable": false
   },
   "vueVersion": "3",
+  "locale": "zh-Hans",
   "h5": {}
 }

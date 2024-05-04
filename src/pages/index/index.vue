@@ -11,7 +11,7 @@ const swiperList = ref([
 
 const handleToast = () => {
   toast({
-    title: 'Hello World',
+    title: 'Hello Uni-App',
   })
 }
 </script>

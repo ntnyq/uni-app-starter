@@ -24,6 +24,10 @@ export default defineConfig({
     },
   },
 
+  server: {
+    hmr: true,
+  },
+
   build: {
     target: 'es2015',
     minify: 'terser',
