@@ -6,10 +6,6 @@
     "navigationBarTextStyle": "black",
     "backgroundColor": "#FFFFFF"
   },
-  "easycom": {
-    "autoscan": true,
-    "custom": {}
-  },
   "tabBar": {
     "color": "#999999",
     "selectedColor": "#ffd300",

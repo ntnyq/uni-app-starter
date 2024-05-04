@@ -1,0 +1,8 @@
+/// @name WotStyle
+
+@use './core.scss' as *;
+
+.root,
+page {
+  --wot-color-theme: #{$primary-color};
+}

@@ -13,6 +13,8 @@ import UniLayouts from '@uni-helper/vite-plugin-uni-layouts'
 import UniPlatform from '@uni-helper/vite-plugin-uni-platform'
 import UniManifest from '@uni-helper/vite-plugin-uni-manifest'
 import UniComponents from '@uni-helper/vite-plugin-uni-components'
+import { uniuseAutoImports } from '@uni-helper/uni-use'
+import { WotResolver } from '@uni-helper/vite-plugin-uni-components/resolvers'
 import { resolve } from './scripts/utils'
 
 export default defineConfig({
@@ -25,6 +27,7 @@ export default defineConfig({
   build: {
     target: 'es2015',
     minify: 'terser',
+    cssTarget: 'chrome61',
   },
 
   plugins: [
@@ -41,7 +44,12 @@ export default defineConfig({
 
     UniManifest(),
 
-    UniComponents(),
+    UniComponents({
+      resolvers: [
+        // Wot Design Uni
+        WotResolver(),
+      ],
+    }),
 
     // 置于 Uni* 之后
     Uni(),
@@ -50,8 +58,9 @@ export default defineConfig({
 
     AutoImport({
       dts: 'src/auto-imports.d.ts',
-      imports: ['vue', 'pinia', 'uni-app'],
+      imports: ['vue', 'pinia', 'uni-app', uniuseAutoImports()],
       dirs: [],
+      resolvers: [],
     }),
   ],
 })

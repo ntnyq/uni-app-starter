@@ -11,10 +11,6 @@ export default defineUniPages({
     //   navigationStyle: 'custom',
     // },
   },
-  easycom: {
-    autoscan: true,
-    custom: {},
-  },
   tabBar: {
     color: '#999999',
     selectedColor: '#ffd300',

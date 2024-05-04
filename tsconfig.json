@@ -7,7 +7,8 @@
     "paths": {
       "@/*": ["./src/*"]
     },
-    "types": ["node", "@uni-helper/uni-ui-types", "@dcloudio/types"],
+    "types": ["node", "@dcloudio/types", "@uni-helper/uni-ui-types", "wot-design-uni/global.d.ts"],
+    "resolveJsonModule": true,
     "outDir": "dist",
     "esModuleInterop": true,
     "strict": true,

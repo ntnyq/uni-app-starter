@@ -31,8 +31,10 @@
     "nocheck",
     "nvue",
     "pinia",
+    "swiper",
     "toutiao",
     "unplugin",
+    "vueuse",
     "weixin"
   ]
 }

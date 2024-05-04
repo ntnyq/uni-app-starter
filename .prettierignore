@@ -1,0 +1,5 @@
+node_modules
+publics
+static
+dist
+*.min.*
