@@ -1,0 +1,38 @@
+{
+  "eslint.enable": true,
+  "prettier.enable": true,
+  "eslint.validate": [
+    "vue",
+    "yaml",
+    "html",
+    "json",
+    "jsonc",
+    "json5",
+    "markdown",
+    "javascript",
+    "typescript",
+    "javascriptreact",
+    "typescriptreact"
+  ],
+  "eslint.experimental.useFlatConfig": true,
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "cSpell.allowCompoundWords": true,
+  "cSpell.words": [
+    "armeabi",
+    "automator",
+    "bumpp",
+    "changelogithub",
+    "dcloudio",
+    "iconify",
+    "INTLIFY",
+    "nocheck",
+    "nvue",
+    "pinia",
+    "toutiao",
+    "unplugin",
+    "weixin"
+  ]
+}
