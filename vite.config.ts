@@ -16,6 +16,7 @@ import UniComponents from '@uni-helper/vite-plugin-uni-components'
 import { uniuseAutoImports } from '@uni-helper/uni-use'
 import { WotResolver } from '@uni-helper/vite-plugin-uni-components/resolvers'
 import { resolve } from './scripts/utils'
+import { UniPolyfill } from './plugins/uniPolyfill'
 
 export default defineConfig({
   resolve: {
@@ -54,6 +55,8 @@ export default defineConfig({
         WotResolver(),
       ],
     }),
+
+    UniPolyfill(),
 
     // 置于 Uni* 之后
     Uni(),
