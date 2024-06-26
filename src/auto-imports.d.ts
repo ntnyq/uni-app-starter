@@ -107,6 +107,7 @@ declare global {
   const useNetwork: typeof import('@uni-helper/uni-use')['useNetwork']
   const useOnline: typeof import('@uni-helper/uni-use')['useOnline']
   const usePage: typeof import('@uni-helper/uni-use')['usePage']
+  const usePageScroll: typeof import('@uni-helper/uni-use')['usePageScroll']
   const usePages: typeof import('@uni-helper/uni-use')['usePages']
   const usePreferredDark: typeof import('@uni-helper/uni-use')['usePreferredDark']
   const usePreferredLanguage: typeof import('@uni-helper/uni-use')['usePreferredLanguage']

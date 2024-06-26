@@ -13,11 +13,11 @@
     "outDir": "dist",
     "esModuleInterop": true,
     "strict": true,
+    "noImplicitAny": false,
     "skipLibCheck": true
   },
   "vueCompilerOptions": {
-    "target": 3,
-    "nativeTags": ["block", "template", "component", "slot"]
+    "target": 3
   },
   "include": ["src/**/*.ts", "src/**/*.vue", "./scripts/**/*.ts", "./*.config.*"]
 }

@@ -40,8 +40,8 @@ export default defineManifestConfig({
         targetSdkVersion: 30,
         abiFilters: ['armeabi-v7a', 'arm64-v8a'],
         permissions: [
-          // '<uses-feature android:name="android.hardware.camera"/>',
-          // '<uses-feature android:name="android.hardware.camera.autofocus"/>',
+          '<uses-feature android:name="android.hardware.camera"/>',
+          '<uses-feature android:name="android.hardware.camera.autofocus"/>',
           '<uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>',
           '<uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>',
           '<uses-permission android:name="android.permission.VIBRATE"/>',
