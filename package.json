@@ -88,6 +88,6 @@
     }
   },
   "nano-staged": {
-    "*.{js,ts,vue,cjs,mjs,json,md,yml,yaml}": "eslint --fix"
+    "*.{js,ts,vue,cjs,mjs,mts,json,md,yml,yaml}": "eslint --fix"
   }
 }
