@@ -19,5 +19,11 @@
   "vueCompilerOptions": {
     "target": 3
   },
-  "include": ["src/**/*.ts", "src/**/*.vue", "./scripts/**/*.ts", "./*.config.*"]
+  "include": [
+    "./src/**/*.ts",
+    "./src/**/*.vue",
+    "./scripts/**/*.ts",
+    "./plugins/**/*.ts",
+    "./*.config.*"
+  ]
 }
