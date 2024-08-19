@@ -43,7 +43,7 @@
     "@iconify/json": "^2.2.235",
     "@uni-helper/uni-use": "^0.19.12",
     "@unocss/reset": "^0.61.9",
-    "@vueuse/core": "^10.11.1",
+    "@vueuse/core": "^11.0.0",
     "dayjs": "^1.11.12",
     "pinia": "^2.2.1",
     "pinia-plugin-persistedstate": "^3.2.1",
