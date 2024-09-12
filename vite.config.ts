@@ -4,19 +4,19 @@
  * @see https://vitejs.dev/config
  */
 
-import { defineConfig } from 'vite'
 // import UnoCSS from 'unocss/vite'
 import Uni from '@dcloudio/vite-plugin-uni'
-import AutoImport from 'unplugin-auto-import/vite'
-import UniPages from '@uni-helper/vite-plugin-uni-pages'
-import UniLayouts from '@uni-helper/vite-plugin-uni-layouts'
-import UniPlatform from '@uni-helper/vite-plugin-uni-platform'
-import UniManifest from '@uni-helper/vite-plugin-uni-manifest'
-import UniComponents from '@uni-helper/vite-plugin-uni-components'
 import { uniuseAutoImports } from '@uni-helper/uni-use'
+import UniComponents from '@uni-helper/vite-plugin-uni-components'
 import { WotResolver } from '@uni-helper/vite-plugin-uni-components/resolvers'
-import { resolve } from './scripts/utils'
+import UniLayouts from '@uni-helper/vite-plugin-uni-layouts'
+import UniManifest from '@uni-helper/vite-plugin-uni-manifest'
+import UniPages from '@uni-helper/vite-plugin-uni-pages'
+import UniPlatform from '@uni-helper/vite-plugin-uni-platform'
+import AutoImport from 'unplugin-auto-import/vite'
+import { defineConfig } from 'vite'
 import { UniPolyfill } from './plugins/uniPolyfill'
+import { resolve } from './scripts/utils'
 
 export default defineConfig({
   resolve: {
