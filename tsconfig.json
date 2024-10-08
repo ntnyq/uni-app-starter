@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "target": "ESNext",
-    "lib": ["esnext", "dom"],
+    "lib": ["ESNext", "DOM"],
     "module": "ESNext",
     "moduleResolution": "Bundler",
     "baseUrl": ".",
@@ -17,7 +17,8 @@
     "skipLibCheck": true
   },
   "vueCompilerOptions": {
-    "target": 3
+    "target": 3,
+    "plugins": ["@uni-helper/uni-app-types/volar-plugin"]
   },
   "include": [
     "./src/**/*.ts",
@@ -25,5 +26,6 @@
     "./scripts/**/*.ts",
     "./plugins/**/*.ts",
     "./*.config.*"
-  ]
+  ],
+  "exclude": ["dist", "node_modules"]
 }
