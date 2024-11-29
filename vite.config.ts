@@ -19,31 +19,6 @@ import { UniPolyfill } from './plugins/uniPolyfill'
 import { resolve } from './scripts/utils'
 
 export default defineConfig({
-  resolve: {
-    alias: {
-      '@': resolve('src'),
-    },
-  },
-
-  css: {
-    preprocessorOptions: {
-      scss: {
-        api: 'modern-compiler',
-        silenceDeprecations: ['import', 'legacy-js-api'],
-      },
-    },
-  },
-
-  server: {
-    hmr: true,
-  },
-
-  build: {
-    target: 'es2015',
-    minify: 'terser',
-    cssTarget: 'chrome61',
-  },
-
   plugins: [
     UniPages({
       exclude: ['**/components/**/**.*'],
@@ -79,4 +54,29 @@ export default defineConfig({
       resolvers: [],
     }),
   ],
+
+  resolve: {
+    alias: {
+      '@': resolve('src'),
+    },
+  },
+
+  css: {
+    preprocessorOptions: {
+      scss: {
+        api: 'modern-compiler',
+        silenceDeprecations: ['import', 'legacy-js-api', 'global-builtin'],
+      },
+    },
+  },
+
+  server: {
+    hmr: true,
+  },
+
+  build: {
+    target: 'es2015',
+    minify: 'terser',
+    cssTarget: 'chrome61',
+  },
 })
