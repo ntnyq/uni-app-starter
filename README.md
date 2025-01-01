@@ -1,9 +1,9 @@
-# starter-uni-app
+# uni-app-starter
 
-> Starter for uni-app.
+> Starter for Uni App.
 
-[![CI](https://github.com/ntnyq/starter-uni-app/workflows/CI/badge.svg)](https://github.com/ntnyq/starter-uni-app/actions)
-[![LICENSE](https://img.shields.io/github/license/ntnyq/starter-uni-app.svg)](https://github.com/ntnyq/starter-uni-app/blob/main/LICENSE)
+[![CI](https://github.com/ntnyq/uni-app-starter/workflows/CI/badge.svg)](https://github.com/ntnyq/uni-app-starter/actions)
+[![LICENSE](https://img.shields.io/github/license/ntnyq/uni-app-starter.svg)](https://github.com/ntnyq/uni-app-starter/blob/main/LICENSE)
 
 ## Links
 

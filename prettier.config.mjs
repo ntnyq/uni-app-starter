@@ -1,7 +1,3 @@
-/**
- * @file prettier config
- */
-
 // @ts-check
 
 import { config, defineConfig } from '@ntnyq/prettier-config'

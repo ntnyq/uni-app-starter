@@ -5,30 +5,26 @@ import { loadEnv } from 'vite'
 const env = loadEnv(process.env.NODE_ENV!, process.cwd())
 
 export default defineManifestConfig({
-  name: env.VITE_APP_TITLE,
   appid: env.VITE_UNI_APPID,
   description: '__TODO__',
-  versionName: '1.0.0',
-  versionCode: '1',
-  transformPx: false,
-  locale: 'zh-Hans',
-  vueVersion: '3',
-  uniStatistics: {
-    enable: false,
-  },
-
   h5: {},
-
+  locale: 'zh-Hans',
+  'mp-weixin': {},
+  name: env.VITE_APP_TITLE,
+  transformPx: false,
+  versionCode: '1',
+  versionName: '1.0.0',
+  vueVersion: '3',
   'app-plus': {
-    usingComponents: true,
-    nvueStyleCompiler: 'uni-app',
     compilerVersion: 3,
+    nvueStyleCompiler: 'uni-app',
     screenOrientation: ['portrait-primary'],
+    usingComponents: true,
     splashscreen: {
       alwaysShowBeforeRender: true,
-      waiting: true,
       autoclose: true,
       delay: 0,
+      waiting: true,
     },
     /* 模块配置 */
     modules: {},
@@ -36,9 +32,9 @@ export default defineManifestConfig({
     distribute: {
       /* android打包配置 */
       android: {
+        abiFilters: ['armeabi-v7a', 'arm64-v8a'],
         minSdkVersion: 30,
         targetSdkVersion: 30,
-        abiFilters: ['armeabi-v7a', 'arm64-v8a'],
         permissions: [
           '<uses-feature android:name="android.hardware.camera"/>',
           '<uses-feature android:name="android.hardware.camera.autofocus"/>',
@@ -68,5 +64,7 @@ export default defineManifestConfig({
     },
   },
 
-  'mp-weixin': {},
+  uniStatistics: {
+    enable: false,
+  },
 })

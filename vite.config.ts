@@ -19,11 +19,26 @@ import { UniPolyfill } from './plugins/uniPolyfill'
 import { resolve } from './scripts/utils'
 
 export default defineConfig({
+  build: {
+    cssTarget: 'chrome61',
+    minify: 'terser',
+    target: 'es2015',
+  },
+
+  css: {
+    preprocessorOptions: {
+      scss: {
+        api: 'modern-compiler',
+        silenceDeprecations: ['import', 'legacy-js-api', 'global-builtin'],
+      },
+    },
+  },
+
   plugins: [
     UniPages({
       exclude: ['**/components/**/**.*'],
-      routeBlockLang: 'yaml',
       homePage: 'pages/index/index',
+      routeBlockLang: 'yaml',
       subPackages: [],
     }),
 
@@ -48,9 +63,9 @@ export default defineConfig({
     // UnoCSS(),
 
     AutoImport({
+      dirs: [],
       dts: 'src/auto-imports.d.ts',
       imports: ['vue', 'pinia', 'uni-app', uniuseAutoImports()],
-      dirs: [],
       resolvers: [],
     }),
   ],
@@ -61,22 +76,7 @@ export default defineConfig({
     },
   },
 
-  css: {
-    preprocessorOptions: {
-      scss: {
-        api: 'modern-compiler',
-        silenceDeprecations: ['import', 'legacy-js-api', 'global-builtin'],
-      },
-    },
-  },
-
   server: {
     hmr: true,
-  },
-
-  build: {
-    target: 'es2015',
-    minify: 'terser',
-    cssTarget: 'chrome61',
   },
 })

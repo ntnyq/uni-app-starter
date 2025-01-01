@@ -5,10 +5,10 @@
 /**
  * Shortcut type
  */
-export type IShortCut<T = string> = Record<string, T>
-
 export interface IBase {
-  id: string
   createTime: number
+  id: string
   updateTime: number
 }
+
+export type IShortCut<T = string> = Record<string, T>

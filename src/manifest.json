@@ -34,12 +34,12 @@
           "<uses-permission android:name=\"android.permission.WAKE_LOCK\"/>",
           "<uses-permission android:name=\"android.permission.WRITE_SETTINGS\"/>"
         ],
-        "minSdkVersion": 30,
-        "targetSdkVersion": 30,
         "abiFilters": [
           "armeabi-v7a",
           "arm64-v8a"
-        ]
+        ],
+        "minSdkVersion": 30,
+        "targetSdkVersion": 30
       },
       "ios": {},
       "sdkConfigs": {},
@@ -73,6 +73,6 @@
     "enable": false
   },
   "vueVersion": "3",
-  "locale": "zh-Hans",
-  "h5": {}
+  "h5": {},
+  "locale": "zh-Hans"
 }

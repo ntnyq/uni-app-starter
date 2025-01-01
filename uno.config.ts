@@ -7,14 +7,14 @@ import {
 } from 'unocss'
 
 export default defineConfig({
+  transformers: [transformerDirectives(), transformerVariantGroup()],
+
   presets: [
     presetUno(),
     presetIcons({
-      scale: 1.2,
       autoInstall: true,
       extraProperties: {},
+      scale: 1.2,
     }),
   ],
-
-  transformers: [transformerDirectives(), transformerVariantGroup()],
 })
