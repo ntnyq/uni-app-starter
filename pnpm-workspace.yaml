@@ -1,2 +1,26 @@
+catalog:
+  # uni-app
+  '@dcloudio/uni-app': &uni-app 3.0.0-alpha-4040520250107001
+  '@dcloudio/uni-app-harmony': *uni-app
+  '@dcloudio/uni-app-plus': *uni-app
+  '@dcloudio/uni-automator': *uni-app
+  '@dcloudio/uni-cli-shared': *uni-app
+  '@dcloudio/uni-components': *uni-app
+  '@dcloudio/uni-h5': *uni-app
+  '@dcloudio/uni-mp-alipay': *uni-app
+  '@dcloudio/uni-mp-baidu': *uni-app
+  '@dcloudio/uni-mp-jd': *uni-app
+  '@dcloudio/uni-mp-kuaishou': *uni-app
+  '@dcloudio/uni-mp-lark': *uni-app
+  '@dcloudio/uni-mp-qq': *uni-app
+  '@dcloudio/uni-mp-toutiao': *uni-app
+  '@dcloudio/uni-mp-weixin': *uni-app
+  '@dcloudio/uni-mp-xhs': *uni-app
+  '@dcloudio/uni-quickapp-webview': *uni-app
+  '@dcloudio/uni-stacktracey': *uni-app
+  '@dcloudio/vite-plugin-uni': *uni-app
+  # unocss
+  unocss: &unocss ^65.4.0
+  '@unocss/reset': *unocss
 packages:
   - packages/*

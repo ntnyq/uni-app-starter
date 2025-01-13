@@ -1,8 +1,16 @@
 {
   "eslint.enable": true,
   "prettier.enable": true,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "never",
+    "source.sortImports": "never"
+  },
   "eslint.validate": [
     "vue",
+    "xml",
     "yaml",
     "html",
     "json",
@@ -14,10 +22,6 @@
     "javascriptreact",
     "typescriptreact"
   ],
-  "editor.formatOnSave": true,
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "explicit"
-  },
   "cSpell.allowCompoundWords": true,
   "cSpell.words": [
     "armeabi",
@@ -35,6 +39,7 @@
     "swiper",
     "toutiao",
     "unplugin",
+    "vite",
     "vueuse",
     "weixin"
   ]

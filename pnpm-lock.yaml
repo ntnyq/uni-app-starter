@@ -4,6 +4,72 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+catalogs:
+  default:
+    '@dcloudio/uni-app':
+      specifier: 3.0.0-alpha-4040520250107001
+      version: 3.0.0-alpha-4040520250107001
+    '@dcloudio/uni-app-harmony':
+      specifier: 3.0.0-alpha-4040520250107001
+      version: 3.0.0-alpha-4040520250107001
+    '@dcloudio/uni-app-plus':
+      specifier: 3.0.0-alpha-4040520250107001
+      version: 3.0.0-alpha-4040520250107001
+    '@dcloudio/uni-automator':
+      specifier: 3.0.0-alpha-4040520250107001
+      version: 3.0.0-alpha-4040520250107001
+    '@dcloudio/uni-cli-shared':
+      specifier: 3.0.0-alpha-4040520250107001
+      version: 3.0.0-alpha-4040520250107001
+    '@dcloudio/uni-components':
+      specifier: 3.0.0-alpha-4040520250107001
+      version: 3.0.0-alpha-4040520250107001
+    '@dcloudio/uni-h5':
+      specifier: 3.0.0-alpha-4040520250107001
+      version: 3.0.0-alpha-4040520250107001
+    '@dcloudio/uni-mp-alipay':
+      specifier: 3.0.0-alpha-4040520250107001
+      version: 3.0.0-alpha-4040520250107001
+    '@dcloudio/uni-mp-baidu':
+      specifier: 3.0.0-alpha-4040520250107001
+      version: 3.0.0-alpha-4040520250107001
+    '@dcloudio/uni-mp-jd':
+      specifier: 3.0.0-alpha-4040520250107001
+      version: 3.0.0-alpha-4040520250107001
+    '@dcloudio/uni-mp-kuaishou':
+      specifier: 3.0.0-alpha-4040520250107001
+      version: 3.0.0-alpha-4040520250107001
+    '@dcloudio/uni-mp-lark':
+      specifier: 3.0.0-alpha-4040520250107001
+      version: 3.0.0-alpha-4040520250107001
+    '@dcloudio/uni-mp-qq':
+      specifier: 3.0.0-alpha-4040520250107001
+      version: 3.0.0-alpha-4040520250107001
+    '@dcloudio/uni-mp-toutiao':
+      specifier: 3.0.0-alpha-4040520250107001
+      version: 3.0.0-alpha-4040520250107001
+    '@dcloudio/uni-mp-weixin':
+      specifier: 3.0.0-alpha-4040520250107001
+      version: 3.0.0-alpha-4040520250107001
+    '@dcloudio/uni-mp-xhs':
+      specifier: 3.0.0-alpha-4040520250107001
+      version: 3.0.0-alpha-4040520250107001
+    '@dcloudio/uni-quickapp-webview':
+      specifier: 3.0.0-alpha-4040520250107001
+      version: 3.0.0-alpha-4040520250107001
+    '@dcloudio/uni-stacktracey':
+      specifier: 3.0.0-alpha-4040520250107001
+      version: 3.0.0-alpha-4040520250107001
+    '@dcloudio/vite-plugin-uni':
+      specifier: 3.0.0-alpha-4040520250107001
+      version: 3.0.0-alpha-4040520250107001
+    '@unocss/reset':
+      specifier: ^65.4.0
+      version: 65.4.0
+    unocss:
+      specifier: ^65.4.0
+      version: 65.4.0
+
 overrides:
   '@intlify/shared': ^11.0.1
 
@@ -12,49 +78,49 @@ importers:
   .:
     dependencies:
       '@dcloudio/uni-app':
-        specifier: 3.0.0-alpha-4040520250107001
+        specifier: 'catalog:'
         version: 3.0.0-alpha-4040520250107001(@dcloudio/types@3.4.14)(@nuxt/kit@3.15.0(rollup@4.29.1))(@vueuse/core@12.4.0(typescript@5.7.3))(postcss@8.4.49)(rollup@4.29.1)(vue@3.5.13(typescript@5.7.3))
       '@dcloudio/uni-app-harmony':
-        specifier: 3.0.0-alpha-4040520250107001
+        specifier: 'catalog:'
         version: 3.0.0-alpha-4040520250107001(@nuxt/kit@3.15.0(rollup@4.29.1))(@vueuse/core@12.4.0(typescript@5.7.3))(postcss@8.4.49)(rollup@4.29.1)(vite@6.0.7(@types/node@22.10.5)(jiti@2.4.2)(sass-embedded@1.83.1)(terser@5.37.0)(tsx@4.19.2)(yaml@2.7.0))(vue@3.5.13(typescript@5.7.3))
       '@dcloudio/uni-app-plus':
-        specifier: 3.0.0-alpha-4040520250107001
+        specifier: 'catalog:'
         version: 3.0.0-alpha-4040520250107001(@nuxt/kit@3.15.0(rollup@4.29.1))(@vueuse/core@12.4.0(typescript@5.7.3))(postcss@8.4.49)(rollup@4.29.1)(vite@6.0.7(@types/node@22.10.5)(jiti@2.4.2)(sass-embedded@1.83.1)(terser@5.37.0)(tsx@4.19.2)(yaml@2.7.0))(vue@3.5.13(typescript@5.7.3))
       '@dcloudio/uni-components':
-        specifier: 3.0.0-alpha-4040520250107001
+        specifier: 'catalog:'
         version: 3.0.0-alpha-4040520250107001(@nuxt/kit@3.15.0(rollup@4.29.1))(@vueuse/core@12.4.0(typescript@5.7.3))(postcss@8.4.49)(rollup@4.29.1)(vue@3.5.13(typescript@5.7.3))
       '@dcloudio/uni-h5':
-        specifier: 3.0.0-alpha-4040520250107001
+        specifier: 'catalog:'
         version: 3.0.0-alpha-4040520250107001(@nuxt/kit@3.15.0(rollup@4.29.1))(@vueuse/core@12.4.0(typescript@5.7.3))(postcss@8.4.49)(rollup@4.29.1)(vue@3.5.13(typescript@5.7.3))
       '@dcloudio/uni-mp-alipay':
-        specifier: 3.0.0-alpha-4040520250107001
+        specifier: 'catalog:'
         version: 3.0.0-alpha-4040520250107001(@nuxt/kit@3.15.0(rollup@4.29.1))(@vueuse/core@12.4.0(typescript@5.7.3))(postcss@8.4.49)(rollup@4.29.1)(vue@3.5.13(typescript@5.7.3))
       '@dcloudio/uni-mp-baidu':
-        specifier: 3.0.0-alpha-4040520250107001
+        specifier: 'catalog:'
         version: 3.0.0-alpha-4040520250107001(@dcloudio/types@3.4.14)(@nuxt/kit@3.15.0(rollup@4.29.1))(@vueuse/core@12.4.0(typescript@5.7.3))(postcss@8.4.49)(rollup@4.29.1)(vue@3.5.13(typescript@5.7.3))
       '@dcloudio/uni-mp-jd':
-        specifier: 3.0.0-alpha-4040520250107001
+        specifier: 'catalog:'
         version: 3.0.0-alpha-4040520250107001(@nuxt/kit@3.15.0(rollup@4.29.1))(@vueuse/core@12.4.0(typescript@5.7.3))(postcss@8.4.49)(rollup@4.29.1)(vue@3.5.13(typescript@5.7.3))
       '@dcloudio/uni-mp-kuaishou':
-        specifier: 3.0.0-alpha-4040520250107001
+        specifier: 'catalog:'
         version: 3.0.0-alpha-4040520250107001(@nuxt/kit@3.15.0(rollup@4.29.1))(@vueuse/core@12.4.0(typescript@5.7.3))(postcss@8.4.49)(rollup@4.29.1)(vue@3.5.13(typescript@5.7.3))
       '@dcloudio/uni-mp-lark':
-        specifier: 3.0.0-alpha-4040520250107001
+        specifier: 'catalog:'
         version: 3.0.0-alpha-4040520250107001(@nuxt/kit@3.15.0(rollup@4.29.1))(@vueuse/core@12.4.0(typescript@5.7.3))(postcss@8.4.49)(rollup@4.29.1)(vue@3.5.13(typescript@5.7.3))
       '@dcloudio/uni-mp-qq':
-        specifier: 3.0.0-alpha-4040520250107001
+        specifier: 'catalog:'
         version: 3.0.0-alpha-4040520250107001(@nuxt/kit@3.15.0(rollup@4.29.1))(@vueuse/core@12.4.0(typescript@5.7.3))(postcss@8.4.49)(rollup@4.29.1)(vue@3.5.13(typescript@5.7.3))
       '@dcloudio/uni-mp-toutiao':
-        specifier: 3.0.0-alpha-4040520250107001
+        specifier: 'catalog:'
         version: 3.0.0-alpha-4040520250107001(@nuxt/kit@3.15.0(rollup@4.29.1))(@vueuse/core@12.4.0(typescript@5.7.3))(postcss@8.4.49)(rollup@4.29.1)(vue@3.5.13(typescript@5.7.3))
       '@dcloudio/uni-mp-weixin':
-        specifier: 3.0.0-alpha-4040520250107001
+        specifier: 'catalog:'
         version: 3.0.0-alpha-4040520250107001(@nuxt/kit@3.15.0(rollup@4.29.1))(@vueuse/core@12.4.0(typescript@5.7.3))(postcss@8.4.49)(rollup@4.29.1)(vue@3.5.13(typescript@5.7.3))
       '@dcloudio/uni-mp-xhs':
-        specifier: 3.0.0-alpha-4040520250107001
+        specifier: 'catalog:'
         version: 3.0.0-alpha-4040520250107001(@nuxt/kit@3.15.0(rollup@4.29.1))(@vueuse/core@12.4.0(typescript@5.7.3))(postcss@8.4.49)(rollup@4.29.1)(vue@3.5.13(typescript@5.7.3))
       '@dcloudio/uni-quickapp-webview':
-        specifier: 3.0.0-alpha-4040520250107001
+        specifier: 'catalog:'
         version: 3.0.0-alpha-4040520250107001(@nuxt/kit@3.15.0(rollup@4.29.1))(@vueuse/core@12.4.0(typescript@5.7.3))(postcss@8.4.49)(rollup@4.29.1)(vue@3.5.13(typescript@5.7.3))
       '@dcloudio/uni-ui':
         specifier: ^1.5.7
@@ -66,7 +132,7 @@ importers:
         specifier: ^0.19.14
         version: 0.19.14(@nuxt/kit@3.15.0(rollup@4.29.1))(@vueuse/core@12.4.0(typescript@5.7.3))(postcss@8.4.49)(rollup@4.29.1)(typescript@5.7.3)(vue@3.5.13(typescript@5.7.3))
       '@unocss/reset':
-        specifier: ^65.4.0
+        specifier: 'catalog:'
         version: 65.4.0
       '@vueuse/core':
         specifier: ^12.4.0
@@ -94,16 +160,16 @@ importers:
         specifier: ^3.4.14
         version: 3.4.14
       '@dcloudio/uni-automator':
-        specifier: 3.0.0-alpha-4040520250107001
+        specifier: 'catalog:'
         version: 3.0.0-alpha-4040520250107001(@nuxt/kit@3.15.0(rollup@4.29.1))(@vueuse/core@12.4.0(typescript@5.7.3))(jest-environment-node@27.5.1)(jest@27.0.4)(postcss@8.4.49)(rollup@4.29.1)(vue@3.5.13(typescript@5.7.3))
       '@dcloudio/uni-cli-shared':
-        specifier: 3.0.0-alpha-4040520250107001
+        specifier: 'catalog:'
         version: 3.0.0-alpha-4040520250107001(@nuxt/kit@3.15.0(rollup@4.29.1))(@vueuse/core@12.4.0(typescript@5.7.3))(postcss@8.4.49)(rollup@4.29.1)(vue@3.5.13(typescript@5.7.3))
       '@dcloudio/uni-stacktracey':
-        specifier: 3.0.0-alpha-4040520250107001
+        specifier: 'catalog:'
         version: 3.0.0-alpha-4040520250107001
       '@dcloudio/vite-plugin-uni':
-        specifier: 3.0.0-alpha-4040520250107001
+        specifier: 'catalog:'
         version: 3.0.0-alpha-4040520250107001(@nuxt/kit@3.15.0(rollup@4.29.1))(@vueuse/core@12.4.0(typescript@5.7.3))(postcss@8.4.49)(rollup@4.29.1)(vite@6.0.7(@types/node@22.10.5)(jiti@2.4.2)(sass-embedded@1.83.1)(terser@5.37.0)(tsx@4.19.2)(yaml@2.7.0))(vue@3.5.13(typescript@5.7.3))
       '@ntnyq/eslint-config':
         specifier: ^3.12.1
@@ -169,7 +235,7 @@ importers:
         specifier: ^5.7.3
         version: 5.7.3
       unocss:
-        specifier: ^65.4.0
+        specifier: 'catalog:'
         version: 65.4.0(postcss@8.4.49)(rollup@4.29.1)(vite@6.0.7(@types/node@22.10.5)(jiti@2.4.2)(sass-embedded@1.83.1)(terser@5.37.0)(tsx@4.19.2)(yaml@2.7.0))(vue@3.5.13(typescript@5.7.3))
       unocss-applet:
         specifier: ^0.9.0
