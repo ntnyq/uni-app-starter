@@ -5,4 +5,5 @@
 /**
  * Wait for a given amount of time
  */
-export const waitFor = (ms: number) => new Promise(resolve => setTimeout(resolve, ms))
+export const waitFor = (ms: number) =>
+  new Promise(resolve => setTimeout(resolve, ms))

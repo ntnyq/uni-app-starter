@@ -2,8 +2,8 @@
  * @file PostCSS config
  */
 
-module.exports = {
+export default /** @type {import('postcss-load-config').Config} */ ({
   plugins: {
     autoprefixer: {},
   },
-}
+})

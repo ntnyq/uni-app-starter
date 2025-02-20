@@ -17,19 +17,17 @@ export default defineManifestConfig({
   vueVersion: '3',
   'app-plus': {
     compilerVersion: 3,
+    /* 模块配置 */
+    modules: {},
     nvueStyleCompiler: 'uni-app',
     screenOrientation: ['portrait-primary'],
     usingComponents: true,
-    splashscreen: {
-      alwaysShowBeforeRender: true,
-      autoclose: true,
-      delay: 0,
-      waiting: true,
-    },
-    /* 模块配置 */
-    modules: {},
     /* 应用发布信息 */
     distribute: {
+      /* ios打包配置 */
+      ios: {},
+      /* SDK配置 */
+      sdkConfigs: {},
       /* android打包配置 */
       android: {
         abiFilters: ['armeabi-v7a', 'arm64-v8a'],
@@ -52,15 +50,17 @@ export default defineManifestConfig({
           '<uses-permission android:name="android.permission.WRITE_SETTINGS"/>',
         ],
       },
-      /* ios打包配置 */
-      ios: {},
-      /* SDK配置 */
-      sdkConfigs: {},
       /* 图标配置 */
       icons: {
         android: {},
         ios: {},
       },
+    },
+    splashscreen: {
+      alwaysShowBeforeRender: true,
+      autoclose: true,
+      delay: 0,
+      waiting: true,
     },
   },
 

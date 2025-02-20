@@ -5,6 +5,11 @@
 [![CI](https://github.com/ntnyq/uni-app-starter/workflows/CI/badge.svg)](https://github.com/ntnyq/uni-app-starter/actions)
 [![LICENSE](https://img.shields.io/github/license/ntnyq/uni-app-starter.svg)](https://github.com/ntnyq/uni-app-starter/blob/main/LICENSE)
 
+## Note
+
+- `sass-embedded` is not supported when build ios app
+- `pinia@v3` has exports issue
+
 ## Links
 
 - [Wot Design Uni](https://wot-design-uni.cn)

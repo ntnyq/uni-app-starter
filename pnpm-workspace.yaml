@@ -1,6 +1,6 @@
 catalog:
   # uni-app
-  '@dcloudio/uni-app': &uni-app 3.0.0-alpha-4050120250121001
+  '@dcloudio/uni-app': &uni-app 3.0.0-alpha-4050220250208001
   '@dcloudio/uni-app-harmony': *uni-app
   '@dcloudio/uni-app-plus': *uni-app
   '@dcloudio/uni-automator': *uni-app
@@ -20,7 +20,7 @@ catalog:
   '@dcloudio/uni-stacktracey': *uni-app
   '@dcloudio/vite-plugin-uni': *uni-app
   # unocss
-  unocss: &unocss ^65.4.3
+  unocss: &unocss ^66.0.0
   '@unocss/reset': *unocss
 packages:
   - .

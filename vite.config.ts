@@ -65,7 +65,7 @@ export default defineConfig({
     AutoImport({
       dirs: [],
       dts: 'src/auto-imports.d.ts',
-      imports: ['vue', 'pinia', 'uni-app', uniuseAutoImports()],
+      imports: ['vue', 'uni-app', uniuseAutoImports()],
       resolvers: [],
     }),
   ],
