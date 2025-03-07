@@ -30,7 +30,7 @@
   ],
   "exclude": ["dist", "node_modules"],
   "vueCompilerOptions": {
-    "target": 3,
-    "plugins": ["@uni-helper/uni-app-types/volar-plugin"]
+    "plugins": ["@uni-helper/uni-app-types/volar-plugin"],
+    "target": 3
   }
 }
