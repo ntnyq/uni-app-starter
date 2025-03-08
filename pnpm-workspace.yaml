@@ -1,26 +1,31 @@
 catalog:
-  # uni-app
-  '@dcloudio/uni-app': &uni-app 3.0.0-alpha-4050420250306001
-  '@dcloudio/uni-app-harmony': *uni-app
-  '@dcloudio/uni-app-plus': *uni-app
-  '@dcloudio/uni-automator': *uni-app
-  '@dcloudio/uni-cli-shared': *uni-app
-  '@dcloudio/uni-components': *uni-app
-  '@dcloudio/uni-h5': *uni-app
-  '@dcloudio/uni-mp-alipay': *uni-app
-  '@dcloudio/uni-mp-baidu': *uni-app
-  '@dcloudio/uni-mp-jd': *uni-app
-  '@dcloudio/uni-mp-kuaishou': *uni-app
-  '@dcloudio/uni-mp-lark': *uni-app
-  '@dcloudio/uni-mp-qq': *uni-app
-  '@dcloudio/uni-mp-toutiao': *uni-app
-  '@dcloudio/uni-mp-weixin': *uni-app
-  '@dcloudio/uni-mp-xhs': *uni-app
-  '@dcloudio/uni-quickapp-webview': *uni-app
-  '@dcloudio/uni-stacktracey': *uni-app
-  '@dcloudio/vite-plugin-uni': *uni-app
-  # unocss
-  unocss: &unocss ^66.0.0
-  '@unocss/reset': *unocss
+  '@dcloudio/uni-app': 3.0.0-alpha-4050420250306001
+  '@dcloudio/uni-app-harmony': 3.0.0-alpha-4050420250306001
+  '@dcloudio/uni-app-plus': 3.0.0-alpha-4050420250306001
+  '@dcloudio/uni-automator': 3.0.0-alpha-4050420250306001
+  '@dcloudio/uni-cli-shared': 3.0.0-alpha-4050420250306001
+  '@dcloudio/uni-components': 3.0.0-alpha-4050420250306001
+  '@dcloudio/uni-h5': 3.0.0-alpha-4050420250306001
+  '@dcloudio/uni-mp-alipay': 3.0.0-alpha-4050420250306001
+  '@dcloudio/uni-mp-baidu': 3.0.0-alpha-4050420250306001
+  '@dcloudio/uni-mp-jd': 3.0.0-alpha-4050420250306001
+  '@dcloudio/uni-mp-kuaishou': 3.0.0-alpha-4050420250306001
+  '@dcloudio/uni-mp-lark': 3.0.0-alpha-4050420250306001
+  '@dcloudio/uni-mp-qq': 3.0.0-alpha-4050420250306001
+  '@dcloudio/uni-mp-toutiao': 3.0.0-alpha-4050420250306001
+  '@dcloudio/uni-mp-weixin': 3.0.0-alpha-4050420250306001
+  '@dcloudio/uni-mp-xhs': 3.0.0-alpha-4050420250306001
+  '@dcloudio/uni-quickapp-webview': 3.0.0-alpha-4050420250306001
+  '@dcloudio/uni-stacktracey': 3.0.0-alpha-4050420250306001
+  '@dcloudio/vite-plugin-uni': 3.0.0-alpha-4050420250306001
+  '@unocss/reset': ^66.1.0-beta.3
+  unocss: ^66.1.0-beta.3
+onlyBuiltDependencies:
+  - '@parcel/watcher'
+  - core-js
+  - esbuild
+  - vue-demi
 packages:
   - .
+patchedDependencies:
+  pinia: patches/pinia.patch
