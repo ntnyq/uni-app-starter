@@ -56,7 +56,7 @@
     "@unocss/reset": "catalog:",
     "@vueuse/core": "^12.8.2",
     "dayjs": "^1.11.13",
-    "pinia": "^2.3.1",
+    "pinia": "^3.0.1",
     "pinia-plugin-persistedstate": "^4.2.0",
     "vue": "^3.5.13",
     "vue-i18n": "^11.1.2",
