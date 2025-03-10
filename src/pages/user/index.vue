@@ -1,9 +1,12 @@
+<script lang="ts" setup>
+defineProps<{}>()
+definePage({
+  layout: 'user',
+})
+</script>
+
 <template>
-  <view>
+  <view class="">
     <text>User Page</text>
   </view>
 </template>
-
-<route lang="yaml">
-layout: user
-</route>

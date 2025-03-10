@@ -1,7 +1,7 @@
+import { presetUni } from '@uni-helper/unocss-preset-uni'
 import {
   defineConfig,
   presetIcons,
-  presetWind3,
   transformerDirectives,
   transformerVariantGroup,
 } from 'unocss'
@@ -10,11 +10,14 @@ export default defineConfig({
   transformers: [transformerDirectives(), transformerVariantGroup()],
 
   presets: [
-    presetWind3(),
+    presetUni(),
     presetIcons({
       autoInstall: true,
-      extraProperties: {},
       scale: 1.2,
+      extraProperties: {
+        display: 'inline-block',
+        'vertical-align': 'middle',
+      },
     }),
   ],
 

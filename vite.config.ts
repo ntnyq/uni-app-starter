@@ -1,11 +1,10 @@
 /**
  * @file Vite config
- *
  * @see https://vitejs.dev/config
  */
 
-// import UnoCSS from 'unocss/vite'
 import Uni from '@dcloudio/vite-plugin-uni'
+import { interopDefault } from '@ntnyq/utils'
 import { uniuseAutoImports } from '@uni-helper/uni-use'
 import UniComponents from '@uni-helper/vite-plugin-uni-components'
 import { WotResolver } from '@uni-helper/vite-plugin-uni-components/resolvers'
@@ -17,66 +16,73 @@ import AutoImport from 'unplugin-auto-import/vite'
 import { defineConfig } from 'vite'
 import { UniPolyfill } from './plugins/uniPolyfill'
 import { resolve } from './scripts/utils'
+import type { UserConfig } from 'vite'
 
-export default defineConfig({
-  build: {
-    cssTarget: 'chrome61',
-    minify: 'terser',
-    target: 'es2015',
-  },
+export default defineConfig(async () => {
+  const UnoCSS = await interopDefault(import('unocss/vite'))
+  return {
+    build: {
+      cssTarget: 'chrome61',
+      minify: 'terser',
+      target: 'es2015',
+    },
 
-  css: {
-    preprocessorOptions: {
-      scss: {
-        api: 'modern-compiler',
-        silenceDeprecations: ['import', 'legacy-js-api', 'global-builtin'],
+    css: {
+      preprocessorOptions: {
+        scss: {
+          silenceDeprecations: ['import', 'legacy-js-api', 'global-builtin'],
+        },
       },
     },
-  },
 
-  plugins: [
-    UniPages({
-      exclude: ['**/components/**/**.*'],
-      homePage: 'pages/index/index',
-      routeBlockLang: 'yaml',
-      subPackages: [],
-    }),
+    plugins: [
+      UniPages({
+        dts: 'src/uni-pages.d.ts',
+        exclude: ['**/components/**/**.*'],
+        homePage: 'pages/index/index',
+        routeBlockLang: 'yaml',
+        subPackages: [],
+      }),
 
-    UniLayouts(),
+      UniLayouts(),
 
-    UniPlatform(),
+      UniPlatform(),
 
-    UniManifest(),
+      UniManifest(),
 
-    UniComponents({
-      resolvers: [
-        // Wot Design Uni
-        WotResolver(),
-      ],
-    }),
+      UniComponents({
+        dts: 'src/components.d.ts',
+        resolvers: [
+          // Wot Design Uni
+          WotResolver(),
+        ],
+      }),
 
-    UniPolyfill(),
+      UniPolyfill(),
 
-    // 置于 Uni* 之后
-    Uni(),
+      // 置于 Uni* 之后
+      Uni(),
 
-    // UnoCSS(),
+      UnoCSS({
+        inspector: false,
+      }),
 
-    AutoImport({
-      dirs: [],
-      dts: 'src/auto-imports.d.ts',
-      imports: ['vue', 'uni-app', uniuseAutoImports()],
-      resolvers: [],
-    }),
-  ],
+      AutoImport({
+        dirs: [],
+        dts: 'src/auto-imports.d.ts',
+        imports: ['vue', 'uni-app', uniuseAutoImports()],
+        resolvers: [],
+      }),
+    ],
 
-  resolve: {
-    alias: {
-      '@': resolve('src'),
+    resolve: {
+      alias: {
+        '@': resolve('src'),
+      },
     },
-  },
 
-  server: {
-    hmr: true,
-  },
+    server: {
+      hmr: true,
+    },
+  } satisfies UserConfig
 })

@@ -1,15 +1,5 @@
 <template>
-  <view class="layout-user">
+  <view class="relative h-100vh flex items-center justify-center">
     <slot />
   </view>
 </template>
-
-<style lang="scss">
-.layout-user {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-</style>
