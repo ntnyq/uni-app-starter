@@ -1,3 +1,5 @@
+packages:
+  - .
 catalog:
   '@dcloudio/uni-app': 3.0.0-alpha-4050420250306001
   '@dcloudio/uni-app-harmony': 3.0.0-alpha-4050420250306001
@@ -25,7 +27,5 @@ onlyBuiltDependencies:
   - core-js
   - esbuild
   - vue-demi
-packages:
-  - .
 patchedDependencies:
   pinia: patches/pinia.patch
