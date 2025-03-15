@@ -55,7 +55,7 @@
     "@iconify/json": "^2.2.314",
     "@uni-helper/uni-use": "^0.19.14",
     "@unocss/reset": "catalog:",
-    "@vueuse/core": "^12.8.2",
+    "@vueuse/core": "^13.0.0",
     "dayjs": "^1.11.13",
     "pinia": "^3.0.1",
     "pinia-plugin-persistedstate": "^4.2.0",
