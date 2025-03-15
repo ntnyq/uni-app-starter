@@ -20,8 +20,8 @@ catalog:
   '@dcloudio/uni-quickapp-webview': 3.0.0-alpha-4050420250306001
   '@dcloudio/uni-stacktracey': 3.0.0-alpha-4050420250306001
   '@dcloudio/vite-plugin-uni': 3.0.0-alpha-4050420250306001
-  '@unocss/reset': ^66.1.0-beta.3
-  unocss: ^66.1.0-beta.3
+  '@unocss/reset': ^66.1.0-beta.5
+  unocss: ^66.1.0-beta.5
 onlyBuiltDependencies:
   - '@parcel/watcher'
   - core-js
