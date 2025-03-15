@@ -36,6 +36,7 @@ export default defineConfig({
 
   plugins: [
     UniPages({
+      dts: 'src/uni-pages.d.ts',
       exclude: ['**/components/**/**.*'],
       homePage: 'pages/index/index',
       routeBlockLang: 'yaml',
@@ -49,6 +50,7 @@ export default defineConfig({
     UniManifest(),
 
     UniComponents({
+      dts: 'src/components.d.ts',
       resolvers: [
         // Wot Design Uni
         WotResolver(),

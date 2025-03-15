@@ -15,6 +15,8 @@
       "wot-design-uni/global.d.ts"
     ],
     "resolveJsonModule": true,
+    "erasableSyntaxOnly": true,
+    "libReplacement": false,
     "outDir": "dist",
     "isolatedModules": true,
     "esModuleInterop": true,

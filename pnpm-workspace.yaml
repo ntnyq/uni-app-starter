@@ -1,6 +1,7 @@
 packages:
   - .
 catalog:
+  '@dcloudio/types': ^3.4.14
   '@dcloudio/uni-app': 3.0.0-alpha-4050420250306001
   '@dcloudio/uni-app-harmony': 3.0.0-alpha-4050420250306001
   '@dcloudio/uni-app-plus': 3.0.0-alpha-4050420250306001
@@ -19,9 +20,48 @@ catalog:
   '@dcloudio/uni-mp-xhs': 3.0.0-alpha-4050420250306001
   '@dcloudio/uni-quickapp-webview': 3.0.0-alpha-4050420250306001
   '@dcloudio/uni-stacktracey': 3.0.0-alpha-4050420250306001
+  '@dcloudio/uni-ui': ^1.5.7
   '@dcloudio/vite-plugin-uni': 3.0.0-alpha-4050420250306001
+  '@iconify/json': ^2.2.317
+  '@intlify/shared': ^11.1.2
+  '@ntnyq/eslint-config': ^4.0.2
+  '@ntnyq/prettier-config': ^2.0.0
+  '@types/node': ^22.13.10
+  '@uni-helper/uni-ui-types': ^1.0.0-alpha.6
+  '@uni-helper/uni-use': ^0.19.14
+  '@uni-helper/vite-plugin-uni-components': ^0.2.0
+  '@uni-helper/vite-plugin-uni-layouts': ^0.1.10
+  '@uni-helper/vite-plugin-uni-manifest': ^0.2.8
+  '@uni-helper/vite-plugin-uni-pages': ^0.2.28
+  '@uni-helper/vite-plugin-uni-platform': ^0.0.4
   '@unocss/reset': ^66.1.0-beta.5
+  '@vue/runtime-core': ^3.5.13
+  '@vueuse/core': ^13.0.0
+  autoprefixer: ^10.4.21
+  bumpp: ^10.1.0
+  dayjs: ^1.11.13
+  eslint: ^9.22.0
+  husky: ^9.1.7
+  nano-staged: ^0.8.0
+  npm-run-all2: ^7.0.2
+  pinia: ^3.0.1
+  pinia-plugin-persistedstate: ^4.2.0
+  postcss-load-config: ^6.0.1
+  prettier: ^3.5.3
+  sass: ^1.85.1
+  terser: ^5.39.0
+  tsx: ^4.19.3
+  typescript: ^5.8.2
   unocss: ^66.1.0-beta.5
+  unocss-applet: ^0.9.0
+  unplugin-auto-import: ^19.1.1
+  vite: ^6.2.2
+  vue: ^3.5.13
+  vue-i18n: ^11.1.2
+  vue-tsc: ^2.2.8
+  wot-design-uni: ^1.7.1
+overrides:
+  esbuild: ^0.25.1
 onlyBuiltDependencies:
   - '@parcel/watcher'
   - core-js
