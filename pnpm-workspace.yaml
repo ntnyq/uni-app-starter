@@ -1,7 +1,8 @@
 packages:
   - .
+
 catalog:
-  '@dcloudio/types': ^3.4.14
+  '@dcloudio/types': ^3.4.15
   '@dcloudio/uni-app': 3.0.0-alpha-4060220250416001
   '@dcloudio/uni-app-harmony': 3.0.0-alpha-4060220250416001
   '@dcloudio/uni-app-plus': 3.0.0-alpha-4060220250416001
@@ -21,8 +22,8 @@ catalog:
   '@dcloudio/uni-quickapp-webview': 3.0.0-alpha-4060220250416001
   '@dcloudio/uni-stacktracey': 3.0.0-alpha-4060220250416001
   '@dcloudio/uni-ui': ^1.5.7
-  '@dcloudio/vite-plugin-uni': 3.0.0-alpha-4060220250416001
-  '@iconify/json': ^2.2.329
+  '@dcloudio/vite-plugin-uni': 3.0.0-alpha-4060120250328001
+  '@iconify/json': ^2.2.330
   '@intlify/shared': ^11.1.3
   '@ntnyq/eslint-config': ^4.0.4
   '@ntnyq/prettier-config': ^2.0.0
@@ -40,7 +41,7 @@ catalog:
   autoprefixer: ^10.4.21
   bumpp: ^10.1.0
   dayjs: ^1.11.13
-  eslint: ^9.25.0
+  eslint: ^9.25.1
   husky: ^9.1.7
   nano-staged: ^0.8.0
   npm-run-all2: ^7.0.2
@@ -48,7 +49,7 @@ catalog:
   pinia-plugin-persistedstate: ^4.2.0
   postcss-load-config: ^6.0.1
   prettier: ^3.5.3
-  sass: ^1.86.3
+  sass: ^1.87.0
   terser: ^5.39.0
   tsx: ^4.19.3
   typescript: ^5.8.3
@@ -60,12 +61,16 @@ catalog:
   vue-i18n: ^11.1.3
   vue-tsc: ^2.2.8
   wot-design-uni: ^1.8.0
+
 overrides:
-  esbuild: ^0.25.1
+  esbuild: ^0.25.2
+
 onlyBuiltDependencies:
   - '@parcel/watcher'
   - core-js
   - esbuild
+  - unrs-resolver
   - vue-demi
+
 patchedDependencies:
   pinia: patches/pinia.patch

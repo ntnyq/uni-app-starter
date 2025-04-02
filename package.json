@@ -3,7 +3,7 @@
   "type": "commonjs",
   "version": "0.0.0",
   "private": true,
-  "packageManager": "pnpm@10.8.1",
+  "packageManager": "pnpm@10.9.0",
   "description": "Starter for Uni App",
   "keywords": [
     "uni-app"
@@ -30,7 +30,7 @@
     "dev:h5": "uni",
     "dev:h5:ssr": "uni --ssr",
     "dev:mp": "uni build -p mp-weixin",
-    "lint": "eslint .",
+    "lint": "eslint",
     "prepare": "husky",
     "release": "bumpp",
     "typecheck": "vue-tsc --build"
