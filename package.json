@@ -3,7 +3,7 @@
   "type": "commonjs",
   "version": "0.0.0",
   "private": true,
-  "packageManager": "pnpm@10.12.1",
+  "packageManager": "pnpm@10.12.2",
   "description": "Starter for Uni App",
   "keywords": [
     "uni-app"
@@ -60,7 +60,7 @@
     "pinia": "^3.0.3",
     "pinia-plugin-persistedstate": "^4.3.0",
     "vue": "^3.5.17",
-    "vue-i18n": "^11.1.6",
+    "vue-i18n": "^11.1.7",
     "wot-design-uni": "^1.9.1"
   },
   "devDependencies": {
@@ -69,7 +69,7 @@
     "@dcloudio/uni-cli-shared": "^3.0.0-alpha-4070220250618001",
     "@dcloudio/uni-stacktracey": "^3.0.0-alpha-4070220250618001",
     "@dcloudio/vite-plugin-uni": "^3.0.0-alpha-3000020210521001",
-    "@intlify/shared": "^11.1.6",
+    "@intlify/shared": "^11.1.7",
     "@ntnyq/eslint-config": "^4.3.0",
     "@ntnyq/prettier-config": "^3.0.1",
     "@types/node": "^22.15.32",
@@ -87,7 +87,7 @@
     "nano-staged": "^0.8.0",
     "npm-run-all2": "^8.0.4",
     "postcss-load-config": "^6.0.1",
-    "prettier": "^3.5.3",
+    "prettier": "^3.6.0",
     "sass": "^1.89.2",
     "terser": "^5.43.1",
     "tsx": "^4.20.3",
