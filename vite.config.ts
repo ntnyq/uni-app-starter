@@ -28,7 +28,6 @@ export default defineConfig({
   css: {
     preprocessorOptions: {
       scss: {
-        api: 'modern-compiler',
         silenceDeprecations: ['import', 'legacy-js-api', 'global-builtin'],
       },
     },

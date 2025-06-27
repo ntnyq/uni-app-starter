@@ -1,7 +1,9 @@
 {
   "compilerOptions": {
     "target": "ESNext",
-    "lib": ["ESNext", "DOM"],
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
+    "jsx": "preserve",
+    "jsxImportSource": "vue",
     "module": "ESNext",
     "moduleResolution": "Bundler",
     "baseUrl": ".",
@@ -10,8 +12,9 @@
     },
     "types": [
       "node",
+      "vite/client",
       "@dcloudio/types",
-      "@uni-helper/uni-ui-types",
+      "@uni-helper/uni-types",
       "wot-design-uni/global.d.ts"
     ],
     "resolveJsonModule": true,
@@ -31,9 +34,9 @@
     "./plugins/**/*.ts",
     "./*.config.*"
   ],
-  "exclude": ["dist", "node_modules"],
+  "exclude": ["**/dist/**", "**/node_modules/**"],
   "vueCompilerOptions": {
-    "plugins": ["@uni-helper/uni-app-types/volar-plugin"],
+    "plugins": ["@uni-helper/uni-types/volar-plugin"],
     "target": 3
   }
 }
