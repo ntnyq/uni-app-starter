@@ -70,7 +70,7 @@
     "@dcloudio/uni-stacktracey": "^3.0.0-alpha-4070220250618001",
     "@dcloudio/vite-plugin-uni": "^3.0.0-alpha-3000020210521001",
     "@intlify/shared": "^11.1.7",
-    "@ntnyq/eslint-config": "^4.3.0",
+    "@ntnyq/eslint-config": "^5.0.0",
     "@ntnyq/prettier-config": "^3.0.1",
     "@types/node": "^22.15.32",
     "@uni-helper/uni-ui-types": "^1.0.0-alpha.6",
