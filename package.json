@@ -3,7 +3,7 @@
   "type": "commonjs",
   "version": "0.0.0",
   "private": true,
-  "packageManager": "pnpm@10.13.0",
+  "packageManager": "pnpm@10.13.1",
   "description": "Starter for Uni App",
   "keywords": [
     "uni-app"
@@ -51,8 +51,8 @@
     "@dcloudio/uni-mp-weixin": "^3.0.0-alpha-4070520250704003",
     "@dcloudio/uni-mp-xhs": "^3.0.0-alpha-4070520250704003",
     "@dcloudio/uni-quickapp-webview": "^3.0.0-alpha-4070520250704003",
-    "@dcloudio/uni-ui": "^1.5.8",
-    "@iconify/json": "^2.2.358",
+    "@dcloudio/uni-ui": "^1.5.10",
+    "@iconify/json": "^2.2.360",
     "@uni-helper/uni-use": "^0.19.14",
     "@unocss/reset": "^66.3.3",
     "@vueuse/core": "^13.5.0",
@@ -60,8 +60,8 @@
     "pinia": "^3.0.3",
     "pinia-plugin-persistedstate": "^4.4.1",
     "vue": "^3.5.17",
-    "vue-i18n": "^11.1.9",
-    "wot-design-uni": "^1.10.0"
+    "vue-i18n": "^11.1.10",
+    "wot-design-uni": "^1.11.0"
   },
   "devDependencies": {
     "@dcloudio/types": "^3.4.16",
@@ -69,10 +69,10 @@
     "@dcloudio/uni-cli-shared": "^3.0.0-alpha-4070520250704003",
     "@dcloudio/uni-stacktracey": "^3.0.0-alpha-4070520250704003",
     "@dcloudio/vite-plugin-uni": "^3.0.0-alpha-3000020210521001",
-    "@intlify/shared": "^11.1.9",
-    "@ntnyq/eslint-config": "^5.0.0",
+    "@intlify/shared": "^11.1.10",
+    "@ntnyq/eslint-config": "^5.1.0",
     "@ntnyq/prettier-config": "^3.0.1",
-    "@types/node": "^22.16.3",
+    "@types/node": "^22.16.5",
     "@uni-helper/uni-ui-types": "^1.0.0-alpha.6",
     "@uni-helper/vite-plugin-uni-components": "^0.2.0",
     "@uni-helper/vite-plugin-uni-layouts": "^0.1.10",
@@ -95,7 +95,7 @@
     "unocss": "^66.3.3",
     "unocss-applet": "^0.10.0",
     "unplugin-auto-import": "^19.3.0",
-    "vite": "^7.0.4",
+    "vite": "^7.0.5",
     "vue-tsc": "^2.2.12"
   },
   "nano-staged": {
