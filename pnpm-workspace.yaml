@@ -2,7 +2,7 @@ packages:
   - .
 
 overrides:
-  esbuild: ^0.25.8
+  esbuild: ^0.25.9
 
 onlyBuiltDependencies:
   - '@parcel/watcher'
