@@ -22,6 +22,9 @@ export default defineConfig(async () => {
   const UnoCSS = await interopDefault(import('unocss/vite'))
   return {
     build: {
+      /**
+       * https://github.com/uni-helper/uni-use#%E6%9E%84%E5%BB%BA
+       */
       cssTarget: 'chrome61',
       minify: 'terser',
       target: 'es2015',
@@ -33,6 +36,10 @@ export default defineConfig(async () => {
           silenceDeprecations: ['import', 'legacy-js-api', 'global-builtin'],
         },
       },
+    },
+
+    optimizeDeps: {
+      exclude: ['vue-demi'],
     },
 
     plugins: [

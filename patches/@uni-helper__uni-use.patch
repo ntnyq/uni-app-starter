@@ -1,0 +1,94 @@
+diff --git a/dist/index.mjs b/dist/index.mjs
+index 06d7b808879c822a1f973eaff253e1516d54c6dd..9ba39d7d5d3faee382526c3e2443fda79583144f 100644
+--- a/dist/index.mjs
++++ b/dist/index.mjs
+@@ -1,6 +1,6 @@
+ import { onBackPress, onHide, onInit, onLoad, onReady, onShow, onUnload, onPageScroll } from '@dcloudio/uni-app';
+-import { ref, computed, getCurrentInstance, getCurrentScope, onScopeDispose, reactive, shallowRef, isRef, readonly, toValue, onMounted, watch } from 'vue';
+-import { resolveUnref, watchWithFilter, until, tryOnScopeDispose as tryOnScopeDispose$1, resolveRef, useIntervalFn, tryOnMounted, pausableWatch } from '@vueuse/core';
++import { ref, computed, getCurrentInstance, getCurrentScope, onScopeDispose, reactive, shallowRef, isRef, readonly, toRef, toValue, onMounted, watch } from 'vue';
++import { watchWithFilter, until, tryOnScopeDispose as tryOnScopeDispose$1, useIntervalFn, tryOnMounted, pausableWatch } from '@vueuse/core';
+ 
+ const name = "@uni-helper/uni-use";
+ 
+@@ -445,7 +445,7 @@ function useActionSheet(options) {
+     return uni.showActionSheet(
+       reactive(__spreadValues$b(__spreadValues$b({
+         itemList: []
+-      }, resolveUnref(options)), resolveUnref(newOptions)))
++      }, toValue(options)), toValue(newOptions)))
+     );
+   };
+ }
+@@ -780,7 +780,7 @@ function useGlobalData(initialValue, options = {}) {
+     eventFilter
+   } = options;
+   const app = ref(getApp());
+-  const rawInit = resolveUnref(initialValue);
++  const rawInit = toValue(initialValue);
+   const data = (shallow ? shallowRef : ref)(initialValue);
+   watchWithFilter(data, () => {
+     var _a;
+@@ -830,7 +830,7 @@ function hideLoading() {
+ function useLoading(options) {
+   function showLoading(newOptions) {
+     uni.showLoading(
+-      reactive(__spreadValues$8(__spreadValues$8({}, resolveUnref(options)), resolveUnref(newOptions)))
++      reactive(__spreadValues$8(__spreadValues$8({}, toValue(options)), toValue(newOptions)))
+     );
+     return hideLoading;
+   }
+@@ -869,7 +869,7 @@ var __spreadValues$7 = (a, b) => {
+ function useModal(options) {
+   return function showModal(newOptions) {
+     return uni.showModal(
+-      reactive(__spreadValues$7(__spreadValues$7({}, resolveUnref(options)), resolveUnref(newOptions)))
++      reactive(__spreadValues$7(__spreadValues$7({}, toValue(options)), toValue(newOptions)))
+     );
+   };
+ }
+@@ -1019,7 +1019,7 @@ function useProvider(options) {
+     return uni.getProvider(
+       reactive(__spreadValues$6(__spreadValues$6({
+         service: "oauth"
+-      }, resolveUnref(options)), resolveUnref(newOptions)))
++      }, toValue(options)), toValue(newOptions)))
+     );
+   };
+ }
+@@ -1236,7 +1236,7 @@ var __spreadValues$4 = (a, b) => {
+ function useScanCode(options) {
+   return function scanCode(newOptions) {
+     return uni.scanCode(
+-      reactive(__spreadValues$4(__spreadValues$4({}, resolveUnref(options)), resolveUnref(newOptions)))
++      reactive(__spreadValues$4(__spreadValues$4({}, toValue(options)), toValue(newOptions)))
+     );
+   };
+ }
+@@ -1376,7 +1376,7 @@ function useSocket(url, options = {}) {
+   const isConnecting = computed(() => status.value === "CONNECTING");
+   const isClosed = computed(() => status.value === "CLOSED");
+   const taskRef = ref();
+-  const urlRef = resolveRef(url);
++  const urlRef = toRef(url);
+   let heartbeatPause;
+   let heartbeatResume;
+   let explicitlyClosed = false;
+@@ -1581,7 +1581,7 @@ function useStorage(key, initialValue, options = {}) {
+     initOnMounted,
+     storage = uni
+   } = options;
+-  const rawInit = resolveUnref(initialValue);
++  const rawInit = toValue(initialValue);
+   const type = guessSerializerType(rawInit);
+   const hasStore = !!store[key];
+   const data = hasStore ? store[key] : (shallow ? shallowRef : ref)(rawInit);
+@@ -1855,7 +1855,7 @@ var __spreadValues$1 = (a, b) => {
+ function useToast(options) {
+   return function showToast(newOptions) {
+     uni.showToast(
+-      __spreadValues$1(__spreadValues$1({}, resolveUnref(options)), resolveUnref(newOptions))
++      __spreadValues$1(__spreadValues$1({}, toValue(options)), toValue(newOptions))
+     );
+     return function hideToast() {
+       return uni.hideToast();
