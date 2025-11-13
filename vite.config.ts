@@ -12,13 +12,14 @@ import UniLayouts from '@uni-helper/vite-plugin-uni-layouts'
 import UniManifest from '@uni-helper/vite-plugin-uni-manifest'
 import UniPages from '@uni-helper/vite-plugin-uni-pages'
 import UniPlatform from '@uni-helper/vite-plugin-uni-platform'
+import { UniEchartsResolver } from 'uni-echarts/resolver'
 import AutoImport from 'unplugin-auto-import/vite'
 import { defineConfig } from 'vite'
 import { UniPolyfill } from './plugins/uniPolyfill'
 import { resolve } from './scripts/utils'
 import type { UserConfig } from 'vite'
 
-export default defineConfig(async () => {
+export default defineConfig(async ({ command }) => {
   const UnoCSS = await interopDefault(import('unocss/vite'))
   return {
     build: {
@@ -39,7 +40,10 @@ export default defineConfig(async () => {
     },
 
     optimizeDeps: {
-      exclude: ['vue-demi'],
+      exclude:
+        command === 'serve'
+          ? ['wot-design-uni', 'uni-echarts', 'vue-demi']
+          : ['vue-demi'],
     },
 
     plugins: [
@@ -62,6 +66,7 @@ export default defineConfig(async () => {
         resolvers: [
           // Wot Design Uni
           WotResolver(),
+          UniEchartsResolver(),
         ],
       }),
 

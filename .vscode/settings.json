@@ -9,6 +9,9 @@
     "source.organizeImports": "never",
     "source.sortImports": "never"
   },
+  "files.associations": {
+    "pages.json": "jsonc"
+  },
   "eslint.validate": [
     "vue",
     "xml",
@@ -30,6 +33,8 @@
     "bumpp",
     "changelogithub",
     "dcloudio",
+    "Echarts",
+    "EFABD",
     "esbuild",
     "iconify",
     "INTLIFY",

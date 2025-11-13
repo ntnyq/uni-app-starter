@@ -1,17 +1,17 @@
 diff --git a/dist/index.mjs b/dist/index.mjs
-index 06d7b808879c822a1f973eaff253e1516d54c6dd..9ba39d7d5d3faee382526c3e2443fda79583144f 100644
+index 5af2e62651583fdf41c3453cb77d2d236c8be9f1..3d702c383f97576996290ac8cb698d5f83f282fa 100644
 --- a/dist/index.mjs
 +++ b/dist/index.mjs
 @@ -1,6 +1,6 @@
  import { onBackPress, onHide, onInit, onLoad, onReady, onShow, onUnload, onPageScroll } from '@dcloudio/uni-app';
--import { ref, computed, getCurrentInstance, getCurrentScope, onScopeDispose, reactive, shallowRef, isRef, readonly, toValue, onMounted, watch } from 'vue';
+-import { ref, computed, getCurrentInstance, getCurrentScope, onScopeDispose, reactive, shallowRef, isRef, readonly, unref, watch, onMounted } from 'vue';
 -import { resolveUnref, watchWithFilter, until, tryOnScopeDispose as tryOnScopeDispose$1, resolveRef, useIntervalFn, tryOnMounted, pausableWatch } from '@vueuse/core';
-+import { ref, computed, getCurrentInstance, getCurrentScope, onScopeDispose, reactive, shallowRef, isRef, readonly, toRef, toValue, onMounted, watch } from 'vue';
++import { ref, computed, getCurrentInstance, getCurrentScope, onScopeDispose, reactive, shallowRef, isRef, readonly, unref, watch, onMounted, toValue, toRef } from 'vue';
 +import { watchWithFilter, until, tryOnScopeDispose as tryOnScopeDispose$1, useIntervalFn, tryOnMounted, pausableWatch } from '@vueuse/core';
  
  const name = "@uni-helper/uni-use";
  
-@@ -445,7 +445,7 @@ function useActionSheet(options) {
+@@ -456,7 +456,7 @@ function useActionSheet(options) {
      return uni.showActionSheet(
        reactive(__spreadValues$b(__spreadValues$b({
          itemList: []
@@ -20,7 +20,7 @@ index 06d7b808879c822a1f973eaff253e1516d54c6dd..9ba39d7d5d3faee382526c3e2443fda7
      );
    };
  }
-@@ -780,7 +780,7 @@ function useGlobalData(initialValue, options = {}) {
+@@ -791,7 +791,7 @@ function useGlobalData(initialValue, options = {}) {
      eventFilter
    } = options;
    const app = ref(getApp());
@@ -29,7 +29,7 @@ index 06d7b808879c822a1f973eaff253e1516d54c6dd..9ba39d7d5d3faee382526c3e2443fda7
    const data = (shallow ? shallowRef : ref)(initialValue);
    watchWithFilter(data, () => {
      var _a;
-@@ -830,7 +830,7 @@ function hideLoading() {
+@@ -841,7 +841,7 @@ function hideLoading() {
  function useLoading(options) {
    function showLoading(newOptions) {
      uni.showLoading(
@@ -38,7 +38,7 @@ index 06d7b808879c822a1f973eaff253e1516d54c6dd..9ba39d7d5d3faee382526c3e2443fda7
      );
      return hideLoading;
    }
-@@ -869,7 +869,7 @@ var __spreadValues$7 = (a, b) => {
+@@ -880,7 +880,7 @@ var __spreadValues$7 = (a, b) => {
  function useModal(options) {
    return function showModal(newOptions) {
      return uni.showModal(
@@ -47,7 +47,7 @@ index 06d7b808879c822a1f973eaff253e1516d54c6dd..9ba39d7d5d3faee382526c3e2443fda7
      );
    };
  }
-@@ -1019,7 +1019,7 @@ function useProvider(options) {
+@@ -1030,7 +1030,7 @@ function useProvider(options) {
      return uni.getProvider(
        reactive(__spreadValues$6(__spreadValues$6({
          service: "oauth"
@@ -56,7 +56,7 @@ index 06d7b808879c822a1f973eaff253e1516d54c6dd..9ba39d7d5d3faee382526c3e2443fda7
      );
    };
  }
-@@ -1236,7 +1236,7 @@ var __spreadValues$4 = (a, b) => {
+@@ -1270,7 +1270,7 @@ var __spreadValues$4 = (a, b) => {
  function useScanCode(options) {
    return function scanCode(newOptions) {
      return uni.scanCode(
@@ -65,7 +65,7 @@ index 06d7b808879c822a1f973eaff253e1516d54c6dd..9ba39d7d5d3faee382526c3e2443fda7
      );
    };
  }
-@@ -1376,7 +1376,7 @@ function useSocket(url, options = {}) {
+@@ -1410,7 +1410,7 @@ function useSocket(url, options = {}) {
    const isConnecting = computed(() => status.value === "CONNECTING");
    const isClosed = computed(() => status.value === "CLOSED");
    const taskRef = ref();
@@ -74,7 +74,7 @@ index 06d7b808879c822a1f973eaff253e1516d54c6dd..9ba39d7d5d3faee382526c3e2443fda7
    let heartbeatPause;
    let heartbeatResume;
    let explicitlyClosed = false;
-@@ -1581,7 +1581,7 @@ function useStorage(key, initialValue, options = {}) {
+@@ -1615,7 +1615,7 @@ function useStorage(key, initialValue, options = {}) {
      initOnMounted,
      storage = uni
    } = options;
@@ -83,7 +83,7 @@ index 06d7b808879c822a1f973eaff253e1516d54c6dd..9ba39d7d5d3faee382526c3e2443fda7
    const type = guessSerializerType(rawInit);
    const hasStore = !!store[key];
    const data = hasStore ? store[key] : (shallow ? shallowRef : ref)(rawInit);
-@@ -1855,7 +1855,7 @@ var __spreadValues$1 = (a, b) => {
+@@ -1889,7 +1889,7 @@ var __spreadValues$1 = (a, b) => {
  function useToast(options) {
    return function showToast(newOptions) {
      uni.showToast(

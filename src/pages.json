@@ -13,6 +13,10 @@
       "type": "home"
     },
     {
+      "path": "pages/chart/index",
+      "type": "page"
+    },
+    {
       "path": "pages/user/index",
       "type": "page",
       "layout": "user"
