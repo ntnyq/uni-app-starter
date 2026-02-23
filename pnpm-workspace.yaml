@@ -1,12 +1,15 @@
 overrides:
-  esbuild: ^0.27.1
+  esbuild: ^0.27.3
+
 onlyBuiltDependencies:
   - '@parcel/watcher'
   - '@uni-helper/unocss-preset-uni'
   - core-js
+  - core-js-pure
   - esbuild
   - unrs-resolver
   - vue-demi
+
 patchedDependencies:
   '@uni-helper/uni-use': patches/@uni-helper__uni-use.patch
   pinia: patches/pinia.patch
