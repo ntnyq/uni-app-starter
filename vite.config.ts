@@ -39,11 +39,15 @@ export default defineConfig(async ({ command }) => {
       },
     },
 
+    json: {
+      stringify: true,
+    },
+
     optimizeDeps: {
       exclude:
         command === 'serve'
-          ? ['wot-design-uni', 'uni-echarts', 'vue-demi']
-          : ['vue-demi'],
+          ? ['wot-design-uni', 'uni-echarts', 'vue-demi', 'src/locale/*.json']
+          : ['vue-demi', 'src/locale/*.json'],
     },
 
     plugins: [
