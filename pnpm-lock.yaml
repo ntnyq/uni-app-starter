@@ -8,12 +8,8 @@ overrides:
   esbuild: ^0.28.0
 
 patchedDependencies:
-  '@uni-helper/uni-use':
-    hash: f3373f3e9e2ccc98a48b50daa483ff383b8a436c48c87ee4b435a47256e1dcf5
-    path: patches/@uni-helper__uni-use.patch
-  pinia:
-    hash: f2616111c1c4f5826260015401bd8759d7db8eae6ccc4bf724c185860101425b
-    path: patches/pinia.patch
+  '@uni-helper/uni-use': f3373f3e9e2ccc98a48b50daa483ff383b8a436c48c87ee4b435a47256e1dcf5
+  pinia: f2616111c1c4f5826260015401bd8759d7db8eae6ccc4bf724c185860101425b
 
 importers:
 
