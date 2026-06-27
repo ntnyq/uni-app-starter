@@ -29,6 +29,13 @@ export default defineConfig(async ({ command }) => {
       cssTarget: 'chrome61',
       minify: 'terser',
       target: 'es2015',
+      rolldownOptions: {
+        logLevel: 'silent',
+        checks: {
+          pluginTimings: false,
+          toleratedTransform: false,
+        },
+      },
     },
 
     css: {
@@ -55,7 +62,6 @@ export default defineConfig(async ({ command }) => {
         dts: 'src/uni-pages.d.ts',
         exclude: ['**/components/**/**.*'],
         homePage: 'pages/index/index',
-        routeBlockLang: 'yaml',
         subPackages: [],
       }),
 
