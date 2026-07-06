@@ -67,8 +67,8 @@ importers:
         specifier: ^2.2.492
         version: 2.2.492
       '@ntnyq/utils':
-        specifier: ^0.15.0
-        version: 0.15.0
+        specifier: ^0.16.0
+        version: 0.16.0
       '@uni-helper/uni-use':
         specifier: ^0.19.17
         version: 0.19.17(patch_hash=f3373f3e9e2ccc98a48b50daa483ff383b8a436c48c87ee4b435a47256e1dcf5)(postcss@8.5.15)(rollup@4.62.2)(typescript@6.0.3)(vite@8.1.0(@types/node@26.0.1)(esbuild@0.28.1)(jiti@2.7.0)(sass@1.101.0)(terser@5.48.0)(yaml@2.9.0))(vue@3.5.39(typescript@6.0.3))
@@ -123,10 +123,10 @@ importers:
         version: 11.4.6
       '@ntnyq/eslint-config':
         specifier: ^6.1.5
-        version: 6.1.5(@typescript-eslint/eslint-plugin@8.62.0(@typescript-eslint/parser@8.62.0(eslint@10.6.0(jiti@2.7.0))(typescript@6.0.3))(eslint@10.6.0(jiti@2.7.0))(typescript@6.0.3))(@typescript-eslint/parser@8.62.0(eslint@10.6.0(jiti@2.7.0))(typescript@6.0.3))(@typescript-eslint/rule-tester@8.62.0(eslint@10.6.0(jiti@2.7.0))(typescript@6.0.3))(@typescript-eslint/typescript-estree@8.62.0(typescript@6.0.3))(@typescript-eslint/utils@8.62.0(eslint@10.6.0(jiti@2.7.0))(typescript@6.0.3))(@vue/compiler-sfc@3.5.39)(eslint@10.6.0(jiti@2.7.0))(oxfmt@0.56.0)(prettier@3.9.0)(typescript@6.0.3)
+        version: 6.1.5(@typescript-eslint/eslint-plugin@8.62.0(@typescript-eslint/parser@8.62.0(eslint@10.6.0(jiti@2.7.0))(typescript@6.0.3))(eslint@10.6.0(jiti@2.7.0))(typescript@6.0.3))(@typescript-eslint/parser@8.62.0(eslint@10.6.0(jiti@2.7.0))(typescript@6.0.3))(@typescript-eslint/rule-tester@8.62.0(eslint@10.6.0(jiti@2.7.0))(typescript@6.0.3))(@typescript-eslint/typescript-estree@8.62.0(typescript@6.0.3))(@typescript-eslint/utils@8.62.0(eslint@10.6.0(jiti@2.7.0))(typescript@6.0.3))(@vue/compiler-sfc@3.5.39)(eslint@10.6.0(jiti@2.7.0))(oxfmt@0.56.0)(prettier@3.9.4)(typescript@6.0.3)
       '@ntnyq/prettier-config':
         specifier: ^3.1.0
-        version: 3.1.0(prettier@3.9.0)
+        version: 3.1.0(prettier@3.9.4)
       '@types/node':
         specifier: ^26.0.1
         version: 26.0.1
@@ -143,8 +143,8 @@ importers:
         specifier: ^0.1.11
         version: 0.1.11(rollup@4.62.2)
       '@uni-helper/vite-plugin-uni-manifest':
-        specifier: ^0.3.2
-        version: 0.3.2(vite@8.1.0(@types/node@26.0.1)(esbuild@0.28.1)(jiti@2.7.0)(sass@1.101.0)(terser@5.48.0)(yaml@2.9.0))
+        specifier: ^0.4.1
+        version: 0.4.1(vite@8.1.0(@types/node@26.0.1)(esbuild@0.28.1)(jiti@2.7.0)(sass@1.101.0)(terser@5.48.0)(yaml@2.9.0))
       '@uni-helper/vite-plugin-uni-pages':
         specifier: ^0.4.4
         version: 0.4.4(vite@8.1.0(@types/node@26.0.1)(esbuild@0.28.1)(jiti@2.7.0)(sass@1.101.0)(terser@5.48.0)(yaml@2.9.0))
@@ -176,8 +176,8 @@ importers:
         specifier: ^6.0.1
         version: 6.0.1(jiti@2.7.0)(postcss@8.5.15)(yaml@2.9.0)
       prettier:
-        specifier: ^3.9.0
-        version: 3.9.0
+        specifier: ^3.9.1
+        version: 3.9.4
       sass:
         specifier: ^1.101.0
         version: 1.101.0
@@ -1593,8 +1593,8 @@ packages:
     resolution: {integrity: sha512-mNpt2Y4n/sWo+Avbw2+h7i+uFxkqIKpYnALIzuyXF2bfCsPW0ZOvuhk392VslzMsDnL1Ci7MpfiVTngwQGhq1Q==}
     engines: {node: ^22.13.0 || >=24}
 
-  '@ntnyq/utils@0.15.0':
-    resolution: {integrity: sha512-/V+wlKysA73OD5R+KlA+C1GhzZst7HiRUCAm1l7ebNiG/rGZ0ysYHEO/qcidKvAQoJ5H/KgahKDfzcAGccQHCA==}
+  '@ntnyq/utils@0.16.0':
+    resolution: {integrity: sha512-MjCM4ZWFYuFYIvIEByjO9jw+STNjTe2rglcLsNHfGHl4TvcUT/ZMXobb5Asgnqj1xEpcP5IPN0/EAE+ekXKvHg==}
     engines: {node: ^22.13.0 || >=24}
 
   '@one-ini/wasm@0.2.1':
@@ -2522,8 +2522,8 @@ packages:
   '@uni-helper/uni-env@0.2.2':
     resolution: {integrity: sha512-cTScRRKflwnx7WSA9mi3QELPMjKIeHFoR0I2RzqO1TuJ5PR45raHt+qmxR7n5fDe3t65ZKYsGS7WFPo0SniJxA==}
 
-  '@uni-helper/uni-manifest-types@0.3.2':
-    resolution: {integrity: sha512-N8cKi4d//wnQcFEgkcKwzJxXuOSLZEHtQj/dCUVV4lgNyCAt9dNDF6f0adH47Q8mq/DuPHHzWXh36wkTKHdsVQ==}
+  '@uni-helper/uni-manifest-types@0.4.1':
+    resolution: {integrity: sha512-GVAKdwsA49k/Lw/sZ44H/n1r5L36OMgyHBQYvPqbL37g1tt53fRTXPQr6Aj/hgt4a1CaaPdGcv4yysFJPE/5Og==}
 
   '@uni-helper/uni-pages-types@0.4.4':
     resolution: {integrity: sha512-cMKX/RrVWDY9WKr3gD3oEUfl27AMkXLm/kuiGlDaAIV3QzdMBIYMmTJUce3khZPXPXEuypcz32sSoSRXOzN5yQ==}
@@ -2580,8 +2580,8 @@ packages:
   '@uni-helper/vite-plugin-uni-layouts@0.1.11':
     resolution: {integrity: sha512-FXdFATBFsHAl7xY9q3KO0EexMRGua/7txIiQTm2rQi1/bXcft4CUXldtuHl9Upq0V6CT47aanmfzcOF5CpHK7Q==}
 
-  '@uni-helper/vite-plugin-uni-manifest@0.3.2':
-    resolution: {integrity: sha512-DKPuLlVKc6xEdasH9yaw/LBH96Jz9g6KPiWWR8BElQChjGYohD4TZHDrm2TpKxquduWMR/4C7eohe0uRscERyg==}
+  '@uni-helper/vite-plugin-uni-manifest@0.4.1':
+    resolution: {integrity: sha512-G/836IYvMFHTZWDst8BQYCXzZ+5Xb6c1VkfoZ/8Y59vKprcVSREp+1g9nTSmYoWEKr4hF2Dd5vBwr+npz+gKEw==}
     peerDependencies:
       vite: ^5.0.0
 
@@ -5498,8 +5498,8 @@ packages:
     resolution: {integrity: sha512-SxToR7P8Y2lWmv/kTzVLC1t/GDI2WGjMwNhLLE9qtH8Q13C+aEmuRlzDst4Up4s0Wc8sF2M+J57iB3cMLqftfg==}
     engines: {node: '>=6.0.0'}
 
-  prettier@3.9.0:
-    resolution: {integrity: sha512-LjIqSIC5VYLzs9WedVmJ2ljNAGnU+DteIClbahu4L/DBeWjZ6iT/k1lAYyu9JUh+1xINxWadaPw/Pl63y/agAw==}
+  prettier@3.9.4:
+    resolution: {integrity: sha512-yWG/o/4oJfo036EKAfK6ACAoDOfHeRHx4tuxkfBZiauURiaSmYwlpOr5LQqKtIkRD2z1PLteme2WoxEnj4tHTg==}
     engines: {node: '>=14'}
     hasBin: true
 
@@ -8863,7 +8863,7 @@ snapshots:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.20.1
 
-  '@ntnyq/eslint-config@6.1.5(@typescript-eslint/eslint-plugin@8.62.0(@typescript-eslint/parser@8.62.0(eslint@10.6.0(jiti@2.7.0))(typescript@6.0.3))(eslint@10.6.0(jiti@2.7.0))(typescript@6.0.3))(@typescript-eslint/parser@8.62.0(eslint@10.6.0(jiti@2.7.0))(typescript@6.0.3))(@typescript-eslint/rule-tester@8.62.0(eslint@10.6.0(jiti@2.7.0))(typescript@6.0.3))(@typescript-eslint/typescript-estree@8.62.0(typescript@6.0.3))(@typescript-eslint/utils@8.62.0(eslint@10.6.0(jiti@2.7.0))(typescript@6.0.3))(@vue/compiler-sfc@3.5.39)(eslint@10.6.0(jiti@2.7.0))(oxfmt@0.56.0)(prettier@3.9.0)(typescript@6.0.3)':
+  '@ntnyq/eslint-config@6.1.5(@typescript-eslint/eslint-plugin@8.62.0(@typescript-eslint/parser@8.62.0(eslint@10.6.0(jiti@2.7.0))(typescript@6.0.3))(eslint@10.6.0(jiti@2.7.0))(typescript@6.0.3))(@typescript-eslint/parser@8.62.0(eslint@10.6.0(jiti@2.7.0))(typescript@6.0.3))(@typescript-eslint/rule-tester@8.62.0(eslint@10.6.0(jiti@2.7.0))(typescript@6.0.3))(@typescript-eslint/typescript-estree@8.62.0(typescript@6.0.3))(@typescript-eslint/utils@8.62.0(eslint@10.6.0(jiti@2.7.0))(typescript@6.0.3))(@vue/compiler-sfc@3.5.39)(eslint@10.6.0(jiti@2.7.0))(oxfmt@0.56.0)(prettier@3.9.4)(typescript@6.0.3)':
     dependencies:
       '@antfu/install-pkg': 1.1.0
       '@clack/prompts': 1.6.0
@@ -8893,7 +8893,7 @@ snapshots:
       eslint-plugin-oxfmt: 0.8.0(eslint@10.6.0(jiti@2.7.0))(oxfmt@0.56.0)
       eslint-plugin-perfectionist: 5.9.1(eslint@10.6.0(jiti@2.7.0))(typescript@6.0.3)
       eslint-plugin-pinia: 0.4.2(@typescript-eslint/utils@8.62.0(eslint@10.6.0(jiti@2.7.0))(typescript@6.0.3))(eslint@10.6.0(jiti@2.7.0))
-      eslint-plugin-prettier: 5.5.6(eslint@10.6.0(jiti@2.7.0))(prettier@3.9.0)
+      eslint-plugin-prettier: 5.5.6(eslint@10.6.0(jiti@2.7.0))(prettier@3.9.4)
       eslint-plugin-regexp: 3.1.1(eslint@10.6.0(jiti@2.7.0))
       eslint-plugin-svgo: 0.12.0(eslint@10.6.0(jiti@2.7.0))
       eslint-plugin-toml: 1.4.0(eslint@10.6.0(jiti@2.7.0))
@@ -8928,15 +8928,15 @@ snapshots:
       - typescript
       - vitest
 
-  '@ntnyq/prettier-config@3.1.0(prettier@3.9.0)':
+  '@ntnyq/prettier-config@3.1.0(prettier@3.9.4)':
     dependencies:
-      prettier: 3.9.0
+      prettier: 3.9.4
 
   '@ntnyq/utils@0.11.6': {}
 
   '@ntnyq/utils@0.13.3': {}
 
-  '@ntnyq/utils@0.15.0': {}
+  '@ntnyq/utils@0.16.0': {}
 
   '@one-ini/wasm@0.2.1': {}
 
@@ -9567,7 +9567,7 @@ snapshots:
     dependencies:
       std-env: 3.10.0
 
-  '@uni-helper/uni-manifest-types@0.3.2': {}
+  '@uni-helper/uni-manifest-types@0.4.1': {}
 
   '@uni-helper/uni-pages-types@0.4.4': {}
 
@@ -9644,9 +9644,9 @@ snapshots:
       - magicast
       - rollup
 
-  '@uni-helper/vite-plugin-uni-manifest@0.3.2(vite@8.1.0(@types/node@26.0.1)(esbuild@0.28.1)(jiti@2.7.0)(sass@1.101.0)(terser@5.48.0)(yaml@2.9.0))':
+  '@uni-helper/vite-plugin-uni-manifest@0.4.1(vite@8.1.0(@types/node@26.0.1)(esbuild@0.28.1)(jiti@2.7.0)(sass@1.101.0)(terser@5.48.0)(yaml@2.9.0))':
     dependencies:
-      '@uni-helper/uni-manifest-types': 0.3.2
+      '@uni-helper/uni-manifest-types': 0.4.1
       c12: 2.0.4
       vite: 8.1.0(@types/node@26.0.1)(esbuild@0.28.1)(jiti@2.7.0)(sass@1.101.0)(terser@5.48.0)(yaml@2.9.0)
     transitivePeerDependencies:
@@ -11121,10 +11121,10 @@ snapshots:
     optionalDependencies:
       '@typescript-eslint/utils': 8.62.0(eslint@10.6.0(jiti@2.7.0))(typescript@6.0.3)
 
-  eslint-plugin-prettier@5.5.6(eslint@10.6.0(jiti@2.7.0))(prettier@3.9.0):
+  eslint-plugin-prettier@5.5.6(eslint@10.6.0(jiti@2.7.0))(prettier@3.9.4):
     dependencies:
       eslint: 10.6.0(jiti@2.7.0)
-      prettier: 3.9.0
+      prettier: 3.9.4
       prettier-linter-helpers: 1.0.1
       synckit: 0.11.13
 
@@ -13158,7 +13158,7 @@ snapshots:
     dependencies:
       fast-diff: 1.3.0
 
-  prettier@3.9.0: {}
+  prettier@3.9.4: {}
 
   pretty-format@27.5.1:
     dependencies:
