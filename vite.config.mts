@@ -7,7 +7,7 @@ import Uni from '@dcloudio/vite-plugin-uni'
 import { interopDefault } from '@ntnyq/utils'
 import { uniuseAutoImports } from '@uni-helper/uni-use'
 import UniComponents from '@uni-helper/vite-plugin-uni-components'
-import { WotResolver } from '@uni-helper/vite-plugin-uni-components/resolvers'
+import { WotV2Resolver } from '@uni-helper/vite-plugin-uni-components/resolvers'
 import UniLayouts from '@uni-helper/vite-plugin-uni-layouts'
 import UniManifest from '@uni-helper/vite-plugin-uni-manifest'
 import UniPages from '@uni-helper/vite-plugin-uni-pages'
@@ -53,7 +53,7 @@ export default defineConfig(async ({ command }) => {
     optimizeDeps: {
       exclude:
         command === 'serve'
-          ? ['wot-design-uni', 'uni-echarts', 'vue-demi', 'src/locale/*.json']
+          ? ['@wot-ui/ui', 'uni-echarts', 'vue-demi', 'src/locale/*.json']
           : ['vue-demi', 'src/locale/*.json'],
     },
 
@@ -74,8 +74,8 @@ export default defineConfig(async ({ command }) => {
       UniComponents({
         dts: 'src/components.d.ts',
         resolvers: [
-          // Wot Design Uni
-          WotResolver(),
+          // Wot UI
+          WotV2Resolver(),
           UniEchartsResolver(),
         ],
       }),

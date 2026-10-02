@@ -12,7 +12,7 @@
 
 ## Links
 
-- [Wot Design Uni](https://wot-design-uni.cn)
+- [Wot UI](https://wot-ui.cn)
 
 ## License
 

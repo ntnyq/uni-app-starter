@@ -1,8 +1,13 @@
 /// @name WotStyle
 
-@use './core.scss' as *;
+@use "sass:color";
+@use "@wot-ui/ui/styles/theme/index.scss" as *;
+@use "./core.scss" as *;
 
 .root,
-page {
-  --wot-color-theme: #{$primary-color};
+page,
+.wd-root-portal {
+  --wot-primary-5: #{color.mix(white, $primary-color, 20%)};
+  --wot-primary-6: #{$primary-color};
+  --wot-primary-7: #{color.mix(black, $primary-color, 10%)};
 }

@@ -4,7 +4,7 @@ overrides:
 patchedDependencies:
   '@dcloudio/uni-mp-vite@3.0.0-alpha-5030120260930001': patches/@dcloudio__uni-mp-vite@3.0.0-alpha-5030120260930001.patch
   '@uni-helper/uni-use': patches/@uni-helper__uni-use.patch
-  wot-design-uni@1.14.0: patches/wot-design-uni@1.14.0.patch
+  '@wot-ui/ui@2.3.2': patches/@wot-ui__ui@2.3.2.patch
 
 allowBuilds:
   '@parcel/watcher': true

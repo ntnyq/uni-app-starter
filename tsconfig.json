@@ -15,7 +15,8 @@
       "@dcloudio/types",
       "@uni-helper/uni-types",
       "@uni-helper/vite-plugin-uni-pages/client",
-      "wot-design-uni/global.d.ts"
+      "miniprogram-api-typings",
+      "@wot-ui/ui/global"
     ],
     "resolveJsonModule": true,
     "erasableSyntaxOnly": true,

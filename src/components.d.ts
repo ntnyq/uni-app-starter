@@ -15,8 +15,8 @@ declare module 'vue' {
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     UniEcharts: typeof import('uni-echarts')['UniEcharts']
-    WdButton: typeof import('wot-design-uni/components/wd-button/wd-button.vue')['WdButton']
-    WdSwiper: typeof import('wot-design-uni/components/wd-swiper/wd-swiper.vue')['WdSwiper']
+    WdButton: typeof import('@wot-ui/ui/components/wd-button/wd-button.vue')['WdButton']
+    WdSwiper: typeof import('@wot-ui/ui/components/wd-swiper/wd-swiper.vue')['WdSwiper']
   }
 }
 
@@ -25,6 +25,6 @@ declare global {
   const RouterLink: typeof import('vue-router')['RouterLink']
   const RouterView: typeof import('vue-router')['RouterView']
   const UniEcharts: typeof import('uni-echarts')['UniEcharts']
-  const WdButton: typeof import('wot-design-uni/components/wd-button/wd-button.vue')['WdButton']
-  const WdSwiper: typeof import('wot-design-uni/components/wd-swiper/wd-swiper.vue')['WdSwiper']
+  const WdButton: typeof import('@wot-ui/ui/components/wd-button/wd-button.vue')['WdButton']
+  const WdSwiper: typeof import('@wot-ui/ui/components/wd-swiper/wd-swiper.vue')['WdSwiper']
 }

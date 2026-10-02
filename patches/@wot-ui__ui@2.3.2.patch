@@ -1,0 +1,13 @@
+diff --git a/composables/useUpload.ts b/composables/useUpload.ts
+index acad05a461562cb197299623100371280d559918..b17b4779c0fee6934c561c67ddb3f19c397efde6 100644
+--- a/composables/useUpload.ts
++++ b/composables/useUpload.ts
+@@ -170,7 +170,7 @@ export function useUpload(): UseUploadReturn {
+     res.tempFiles = isDef((res as any).files) ? (res as any).files : res.tempFiles
+     // #endif
+     if (isArray(res.tempFiles)) {
+-      return res.tempFiles.map((item: any) => ({
++      return res.tempFiles.map((item: any): ChooseFile => ({
+         path: item.path || '',
+         name: item.name || '',
+         size: item.size,

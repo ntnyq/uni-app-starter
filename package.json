@@ -57,14 +57,14 @@
     "@uni-helper/uni-use": "^0.19.17",
     "@unocss/reset": "^66.10.5",
     "@vueuse/core": "^15.0.0",
+    "@wot-ui/ui": "^2.3.2",
     "dayjs": "^1.11.23",
     "echarts": "^6.1.0",
     "pinia": "^4.0.3",
     "pinia-plugin-persistedstate": "^4.7.1",
     "uni-echarts": "^2.5.3",
     "vue": "^3.5.43",
-    "vue-i18n": "^11.4.13",
-    "wot-design-uni": "^1.14.0"
+    "vue-i18n": "^11.4.13"
   },
   "devDependencies": {
     "@dcloudio/types": "^3.4.32",
@@ -88,6 +88,7 @@
     "bumpp": "^12.3.0",
     "eslint": "^10.11.0",
     "husky": "^9.1.7",
+    "miniprogram-api-typings": "^5.2.3",
     "nano-staged": "^1.0.2",
     "npm-run-all2": "^9.0.3",
     "postcss-load-config": "^6.0.1",
