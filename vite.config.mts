@@ -83,7 +83,7 @@ export default defineConfig(async ({ command }) => {
       UniPolyfill(),
 
       // 置于 Uni* 之后
-      Uni(),
+      (await interopDefault(Uni))(),
 
       UnoCSS({
         inspector: false,

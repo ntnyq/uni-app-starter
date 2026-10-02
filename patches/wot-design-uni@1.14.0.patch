@@ -1,0 +1,26 @@
+diff --git a/components/composables/useUpload.ts b/components/composables/useUpload.ts
+index 87cf54b7982609d8c12e49f95d7fbfaba9310e8a..848c4dff1527b859b4c5cf0fdafba716aef95547 100644
+--- a/components/composables/useUpload.ts
++++ b/components/composables/useUpload.ts
+@@ -168,7 +168,7 @@ export function useUpload(): UseUploadReturn {
+     res.tempFiles = isDef((res as any).files) ? (res as any).files : res.tempFiles
+     // #endif
+     if (isArray(res.tempFiles)) {
+-      return res.tempFiles.map((item: any) => ({
++      return res.tempFiles.map((item: any): ChooseFile => ({
+         path: item.path || '',
+         name: item.name || '',
+         size: item.size,
+diff --git a/components/wd-action-sheet/wd-action-sheet.vue b/components/wd-action-sheet/wd-action-sheet.vue
+index 111e04e89aedabd13bd1c62c17d7dc0a87fd1da3..1ad6060acbea23ebf964c99e131ebec3b17757ea 100644
+--- a/components/wd-action-sheet/wd-action-sheet.vue
++++ b/components/wd-action-sheet/wd-action-sheet.vue
+@@ -82,7 +82,7 @@ import { isArray } from '../common/util'
+ const props = defineProps(actionSheetProps)
+ const emit = defineEmits(['select', 'click-modal', 'cancel', 'closed', 'close', 'open', 'opened', 'update:modelValue'])
+ 
+-const formatPanels = ref<Array<Panel> | Array<Panel[]>>([])
++const formatPanels = ref<Panel[][]>([])
+ 
+ const showPopup = ref<boolean>(false)
+ 

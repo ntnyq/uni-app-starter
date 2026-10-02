@@ -1,9 +1,10 @@
 overrides:
-  esbuild: ^0.28.1
+  esbuild: ^0.28.2
 
 patchedDependencies:
+  '@dcloudio/uni-mp-vite@3.0.0-alpha-5030120260930001': patches/@dcloudio__uni-mp-vite@3.0.0-alpha-5030120260930001.patch
   '@uni-helper/uni-use': patches/@uni-helper__uni-use.patch
-  pinia: patches/pinia.patch
+  wot-design-uni@1.14.0: patches/wot-design-uni@1.14.0.patch
 
 allowBuilds:
   '@parcel/watcher': true
@@ -16,5 +17,5 @@ allowBuilds:
 
 ignoreWorkspaceRootCheck: true
 minimumReleaseAge: 0
-packageManagerStrict: false
+pmOnFail: warn
 shamefullyHoist: true

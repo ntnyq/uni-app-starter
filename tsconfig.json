@@ -14,6 +14,7 @@
       "vite/client",
       "@dcloudio/types",
       "@uni-helper/uni-types",
+      "@uni-helper/vite-plugin-uni-pages/client",
       "wot-design-uni/global.d.ts"
     ],
     "resolveJsonModule": true,
@@ -36,6 +37,6 @@
   "exclude": ["**/dist/**", "**/node_modules/**"],
   "vueCompilerOptions": {
     "plugins": ["@uni-helper/uni-types/volar-plugin"],
-    "target": 3
+    "target": 3.5
   }
 }
