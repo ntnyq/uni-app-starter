@@ -1,0 +1,17 @@
+diff --git a/components/wd-rich-text/limits.ts b/components/wd-rich-text/limits.ts
+index 48ec3ab3f3e55470ea01c2c513d3069a84875eef..b498fdeaca0aea2eeb82004905db7bd3dd5f419f 100644
+--- a/components/wd-rich-text/limits.ts
++++ b/components/wd-rich-text/limits.ts
+@@ -4,8 +4,11 @@ export type RichTextParseErrorCode = 'INPUT_LIMIT' | 'NODE_LIMIT' | 'DEPTH_LIMIT
+ export const richTextLimits = { input: 200000, nodes: 10000, depth: 128, output: 2000000 } as const
+ 
+ export class RichTextParseError extends Error {
+-  constructor(public code: RichTextParseErrorCode, message: string) {
++  declare code: RichTextParseErrorCode
++
++  constructor(code: RichTextParseErrorCode, message: string) {
+     super(message)
++    this.code = code
+     this.name = 'RichTextParseError'
+   }
+ }
